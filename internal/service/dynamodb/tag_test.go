@@ -9,9 +9,9 @@ import (
 
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfdynamodb "github.com/hashicorp/terraform-provider-aws/internal/service/dynamodb"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfdynamodb "terraform-provider-awsgps/internal/service/dynamodb"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccDynamoDBTag_basic(t *testing.T) {
@@ -65,7 +65,7 @@ func TestAccDynamoDBTag_disappears(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13725
+// Reference: https://terraform-provider-awsgps/issues/13725
 func TestAccDynamoDBTag_ResourceARN_tableReplica(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)

@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/YakDriver/regexache"
-	tfglobalaccelerator "github.com/hashicorp/terraform-provider-aws/internal/service/globalaccelerator"
+	tfglobalaccelerator "terraform-provider-awsgps/internal/service/globalaccelerator"
 )
 
 func TestEndpointGroupARNToListenerARN(t *testing.T) {

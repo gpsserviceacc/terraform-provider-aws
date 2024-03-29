@@ -11,7 +11,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
+	"terraform-provider-awsgps/internal/framework/flex"
 )
 
 func TestExpandFrameworkStringList(t *testing.T) {

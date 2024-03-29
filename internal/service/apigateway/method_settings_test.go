@@ -13,11 +13,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfapigateway "github.com/hashicorp/terraform-provider-aws/internal/service/apigateway"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfapigateway "terraform-provider-awsgps/internal/service/apigateway"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccAPIGatewayMethodSettings_basic(t *testing.T) {
@@ -410,7 +410,7 @@ func TestAccAPIGatewayMethodSettings_Settings_throttlingBurstLimit(t *testing.T)
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/5690
+// Reference: https://terraform-provider-awsgps/issues/5690
 func TestAccAPIGatewayMethodSettings_Settings_throttlingBurstLimitDisabledByDefault(t *testing.T) {
 	ctx := acctest.Context(t)
 	var stage1, stage2 apigateway.Stage
@@ -487,7 +487,7 @@ func TestAccAPIGatewayMethodSettings_Settings_throttlingRateLimit(t *testing.T) 
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/5690
+// Reference: https://terraform-provider-awsgps/issues/5690
 func TestAccAPIGatewayMethodSettings_Settings_throttlingRateLimitDisabledByDefault(t *testing.T) {
 	ctx := acctest.Context(t)
 	var stage1, stage2 apigateway.Stage

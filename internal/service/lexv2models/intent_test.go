@@ -23,14 +23,14 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	tflexv2models "github.com/hashicorp/terraform-provider-aws/internal/service/lexv2models"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/framework/flex"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
+	tflexv2models "terraform-provider-awsgps/internal/service/lexv2models"
+	"terraform-provider-awsgps/names"
 )
 
 // TestIntentAutoFlex is designed to extensively evaluate the capabilities of Intent expansion and

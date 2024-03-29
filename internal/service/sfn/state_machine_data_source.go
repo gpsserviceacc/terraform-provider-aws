@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/sfn"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
+	"terraform-provider-awsgps/internal/conns"
 )
 
 // @SDKDataSource("aws_sfn_state_machine")

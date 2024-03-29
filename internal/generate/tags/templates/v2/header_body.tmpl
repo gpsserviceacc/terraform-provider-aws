@@ -13,7 +13,7 @@ import (
 	{{ if not .SkipAWSImp }}
 	"github.com/aws/aws-sdk-go-v2/aws"
 	{{- end }}
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	tftags "terraform-provider-awsgps/internal/tags"
 	{{- if .AWSService }}
 		{{- if not .SkipServiceImp }}
 	"github.com/aws/aws-sdk-go-v2/service/{{ .AWSService }}"
@@ -33,21 +33,21 @@ import (
     "github.com/hashicorp/terraform-plugin-log/tflog"
 	{{- end }}
 	{{- if .ConnsPkg }}
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
+	"terraform-provider-awsgps/internal/conns"
 	{{- end }}
 	{{- if .LoggingPkg }}
-	"github.com/hashicorp/terraform-provider-aws/internal/logging"
+	"terraform-provider-awsgps/internal/logging"
 	{{- end }}
 	{{- if .TfSlicesPkg }}
-    tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+    tfslices "terraform-provider-awsgps/internal/slices"
 	{{- end }}
 	{{- if .TfResourcePkg }}
-    "github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+    "terraform-provider-awsgps/internal/tfresource"
 	{{- end }}
 	{{- if .InternalOptionPkg }}
-    "github.com/hashicorp/terraform-provider-aws/internal/types/option"
+    "terraform-provider-awsgps/internal/types/option"
 	{{- end }}
 	{{- if .NamesPkg }}
-    "github.com/hashicorp/terraform-provider-aws/names"
+    "terraform-provider-awsgps/names"
 	{{- end }}
 )

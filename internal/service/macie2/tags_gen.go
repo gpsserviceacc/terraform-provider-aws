@@ -5,8 +5,8 @@ import (
 	"context"
 
 	"github.com/aws/aws-sdk-go/aws"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/types/option"
 )
 
 // map[string]*string handling

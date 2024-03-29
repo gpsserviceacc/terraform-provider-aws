@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/rds"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
+	"terraform-provider-awsgps/internal/flex"
 )
 
 func expandScalingConfiguration(tfMap map[string]interface{}) *rds.ScalingConfiguration {

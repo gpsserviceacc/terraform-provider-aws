@@ -17,13 +17,13 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 // @SDKResource("aws_networkfirewall_rule_group", name="Rule Group")
@@ -557,7 +557,7 @@ func resourceRuleGroupUpdate(ctx context.Context, d *schema.ResourceData, meta i
 		// Network Firewall UpdateRuleGroup API method only allows one of Rules or RuleGroup
 		// else, request returns "InvalidRequestException: Exactly one of Rules or RuleGroup must be set";
 		// Here, "rules" takes precedence as "rule_group" is Computed from "rules" when configured
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19414
+		// Reference: https://terraform-provider-awsgps/issues/19414
 		if d.HasChange("rules") {
 			input.Rules = aws.String(d.Get("rules").(string))
 		} else if d.HasChange("rule_group") {

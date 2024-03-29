@@ -17,11 +17,11 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/acm/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfacm "github.com/hashicorp/terraform-provider-aws/internal/service/acm"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfacm "terraform-provider-awsgps/internal/service/acm"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccACMCertificate_emailValidation(t *testing.T) {
@@ -956,7 +956,7 @@ func TestAccACMCertificate_privateCertificate_removeEarlyRenewal(t *testing.T) {
 }
 
 // TestAccACMCertificate_Root_trailingPeriod updated in 3.0 to account for domain_name plan-time validation
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13510
+// Reference: https://terraform-provider-awsgps/issues/13510
 func TestAccACMCertificate_Root_trailingPeriod(t *testing.T) {
 	ctx := acctest.Context(t)
 	rootDomain := acctest.ACMCertificateDomainFromEnv(t)
@@ -1594,7 +1594,7 @@ func TestAccACMCertificate_Imported_validityDates(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7103
+// Reference: https://terraform-provider-awsgps/issues/7103
 // lintignore:AT002
 func TestAccACMCertificate_Imported_ipAddress(t *testing.T) {
 	ctx := acctest.Context(t)
@@ -1627,7 +1627,7 @@ func TestAccACMCertificate_Imported_ipAddress(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/15055
+// Reference: https://terraform-provider-awsgps/issues/15055
 func TestAccACMCertificate_PrivateKey_tags(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_acm_certificate.test"

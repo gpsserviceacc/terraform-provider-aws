@@ -15,11 +15,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/id"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	tfscheduler "github.com/hashicorp/terraform-provider-aws/internal/service/scheduler"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/create"
+	tfscheduler "terraform-provider-awsgps/internal/service/scheduler"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestResourceScheduleIDFromARN(t *testing.T) {

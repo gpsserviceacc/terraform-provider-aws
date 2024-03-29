@@ -16,11 +16,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfopensearch "github.com/hashicorp/terraform-provider-aws/internal/service/opensearch"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfopensearch "terraform-provider-awsgps/internal/service/opensearch"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestEBSVolumeTypePermitsIopsInput(t *testing.T) {
@@ -1753,7 +1753,7 @@ func TestAccOpenSearchDomain_VolumeType_update(t *testing.T) {
 // Verifies that EBS volume_type can be changed from gp3 to a type which does not
 // support the throughput and iops input values (ex. gp2)
 //
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/27467
+// Reference: https://terraform-provider-awsgps/issues/27467
 func TestAccOpenSearchDomain_VolumeType_gp3ToGP2(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1799,7 +1799,7 @@ func TestAccOpenSearchDomain_VolumeType_gp3ToGP2(t *testing.T) {
 		}})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13867
+// Reference: https://terraform-provider-awsgps/issues/13867
 func TestAccOpenSearchDomain_VolumeType_missing(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {

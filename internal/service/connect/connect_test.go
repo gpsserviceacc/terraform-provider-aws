@@ -6,7 +6,7 @@ package connect_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"terraform-provider-awsgps/internal/acctest"
 )
 
 // Serialized acceptance tests due to Connect account limits (max 2 parallel tests)

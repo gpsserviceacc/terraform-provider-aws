@@ -9,13 +9,13 @@ import (
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/names"
 )
 
 func tagsUpdateFunc(ctx context.Context, d schemaResourceData, sp conns.ServicePackage, spt *types.ServicePackageResourceTags, serviceName, resourceName string, meta any, diags diag.Diagnostics) (context.Context, diag.Diagnostics) {
@@ -37,7 +37,7 @@ func tagsUpdateFunc(ctx context.Context, d schemaResourceData, sp conns.ServiceP
 	}
 
 	// Some old resources may not have the required attribute set after Read:
-	// https://github.com/hashicorp/terraform-provider-aws/issues/31180
+	// https://terraform-provider-awsgps/issues/31180
 	if identifier == "" {
 		return ctx, diags
 	}
@@ -121,7 +121,7 @@ func tagsReadFunc(ctx context.Context, d schemaResourceData, sp conns.ServicePac
 	}
 
 	// Some old resources may not have the required attribute set after Read:
-	// https://github.com/hashicorp/terraform-provider-aws/issues/31180
+	// https://terraform-provider-awsgps/issues/31180
 	if identifier != "" {
 		var err error
 

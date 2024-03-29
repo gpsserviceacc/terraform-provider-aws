@@ -9,10 +9,10 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/elasticloadbalancingv2/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/logging"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/logging"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/types/option"
+	"terraform-provider-awsgps/names"
 )
 
 // listTagsV2 lists elbv2 service tags.

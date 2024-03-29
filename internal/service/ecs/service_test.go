@@ -19,11 +19,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfecs "github.com/hashicorp/terraform-provider-aws/internal/service/ecs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfecs "terraform-provider-awsgps/internal/service/ecs"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func Test_GetRoleNameFromARN(t *testing.T) {
@@ -602,7 +602,7 @@ func TestAccECSService_DeploymentValues_basic(t *testing.T) {
 	})
 }
 
-// Regression for https://github.com/hashicorp/terraform-provider-aws/issues/6315
+// Regression for https://terraform-provider-awsgps/issues/6315
 func TestAccECSService_DeploymentValues_minZeroMaxOneHundred(t *testing.T) {
 	ctx := acctest.Context(t)
 	var service ecs.Service
@@ -877,7 +877,7 @@ func TestAccECSService_PlacementStrategy_basic(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13146
+// Reference: https://terraform-provider-awsgps/issues/13146
 func TestAccECSService_PlacementStrategy_missing(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)

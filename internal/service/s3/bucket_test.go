@@ -26,13 +26,13 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfcloudformation "github.com/hashicorp/terraform-provider-aws/internal/service/cloudformation"
-	tfs3 "github.com/hashicorp/terraform-provider-aws/internal/service/s3"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfcloudformation "terraform-provider-awsgps/internal/service/cloudformation"
+	tfs3 "terraform-provider-awsgps/internal/service/s3"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func init() {
@@ -114,7 +114,7 @@ func TestAccS3Bucket_Basic_basic(t *testing.T) {
 }
 
 // Support for common Terraform 0.11 pattern
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7868
+// Reference: https://terraform-provider-awsgps/issues/7868
 func TestAccS3Bucket_Basic_emptyString(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket.test"
@@ -937,7 +937,7 @@ func TestAccS3Bucket_Manage_lifecycleExpireMarkerOnly(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/11420
+// Reference: https://terraform-provider-awsgps/issues/11420
 func TestAccS3Bucket_Manage_lifecycleRuleExpirationEmptyBlock(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)
@@ -959,7 +959,7 @@ func TestAccS3Bucket_Manage_lifecycleRuleExpirationEmptyBlock(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/15138
+// Reference: https://terraform-provider-awsgps/issues/15138
 func TestAccS3Bucket_Manage_lifecycleRuleAbortIncompleteMultipartUploadDaysNoExpiration(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)
@@ -1629,7 +1629,7 @@ func TestAccS3Bucket_Replication_ruleDestinationAccessControlTranslation(t *test
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12480
+// Reference: https://terraform-provider-awsgps/issues/12480
 func TestAccS3Bucket_Replication_ruleDestinationAddAccessControlTranslation(t *testing.T) {
 	ctx := acctest.Context(t)
 	bucketName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)
@@ -1749,7 +1749,7 @@ func TestAccS3Bucket_Replication_expectVersioningValidationError(t *testing.T) {
 	})
 }
 
-// Prefix issue: https://github.com/hashicorp/terraform-provider-aws/issues/6340
+// Prefix issue: https://terraform-provider-awsgps/issues/6340
 func TestAccS3Bucket_Replication_withoutPrefix(t *testing.T) {
 	ctx := acctest.Context(t)
 	bucketName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)

@@ -8,7 +8,7 @@ import (
 
 	"github.com/aws/aws-sdk-go/service/autoscaling"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/nullable"
+	"terraform-provider-awsgps/internal/types/nullable"
 )
 
 // aws_autoscaling_group resource's Schema @v5.11.0 minus validators.

@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	tfelasticbeanstalk "github.com/hashicorp/terraform-provider-aws/internal/service/elasticbeanstalk"
+	tfelasticbeanstalk "terraform-provider-awsgps/internal/service/elasticbeanstalk"
 )
 
 func TestEnvironmentMigrateState(t *testing.T) {

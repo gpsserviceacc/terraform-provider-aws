@@ -6,7 +6,7 @@ package redshift
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/redshift"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
+	"terraform-provider-awsgps/internal/flex"
 )
 
 func flattenLogging(ls *redshift.LoggingStatus) []interface{} {

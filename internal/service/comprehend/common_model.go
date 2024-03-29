@@ -14,8 +14,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
+	"terraform-provider-awsgps/internal/flex"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
 )
 
 type safeMutex struct {

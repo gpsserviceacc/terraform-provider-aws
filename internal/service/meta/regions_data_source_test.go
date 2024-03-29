@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfmeta "github.com/hashicorp/terraform-provider-aws/internal/service/meta"
+	"terraform-provider-awsgps/internal/acctest"
+	tfmeta "terraform-provider-awsgps/internal/service/meta"
 )
 
 func TestAccMetaRegionsDataSource_basic(t *testing.T) {

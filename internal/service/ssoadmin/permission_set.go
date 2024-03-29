@@ -19,14 +19,14 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/enum"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 // @SDKResource("aws_ssoadmin_permission_set", name="Permission Set")
@@ -193,7 +193,7 @@ func resourcePermissionSetUpdate(ctx context.Context, d *schema.ResourceData, me
 		// The AWS SSO API requires we send the RelayState value regardless if it's unchanged
 		// else the existing Permission Set's RelayState value will be cleared;
 		// for consistency, we'll check for the "presence of" instead of "if changed" for all input fields
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/17411
+		// Reference: https://terraform-provider-awsgps/issues/17411
 
 		if v, ok := d.GetOk("description"); ok {
 			input.Description = aws.String(v.(string))

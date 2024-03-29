@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/eventbridge"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func statusConnectionState(ctx context.Context, conn *eventbridge.EventBridge, name string) retry.StateRefreshFunc {

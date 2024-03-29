@@ -10,9 +10,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/servicecatalog"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfservicecatalog "github.com/hashicorp/terraform-provider-aws/internal/service/servicecatalog"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfservicecatalog "terraform-provider-awsgps/internal/service/servicecatalog"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccServiceCatalogProvisioningArtifactsDataSource_basic(t *testing.T) {

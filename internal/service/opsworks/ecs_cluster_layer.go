@@ -6,7 +6,7 @@ package opsworks
 import (
 	"github.com/aws/aws-sdk-go/service/opsworks"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // @SDKResource("aws_opsworks_ecs_cluster_layer", name="ECS Cluster Layer")

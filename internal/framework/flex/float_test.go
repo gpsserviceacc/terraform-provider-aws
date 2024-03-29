@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
+	"terraform-provider-awsgps/internal/framework/flex"
 )
 
 func TestFloat64ToFramework(t *testing.T) {

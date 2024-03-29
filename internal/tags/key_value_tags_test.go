@@ -9,7 +9,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/names"
 )
 
 func TestKeyValueTagsDefaultConfigGetTags(t *testing.T) {

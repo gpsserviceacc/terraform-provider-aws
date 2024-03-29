@@ -11,8 +11,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	fwtypes "github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
+	"terraform-provider-awsgps/internal/framework"
+	"terraform-provider-awsgps/internal/framework/flex"
 )
 
 // @FrameworkDataSource(name="Repositories")

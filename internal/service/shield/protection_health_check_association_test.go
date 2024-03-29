@@ -14,11 +14,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tfshield "github.com/hashicorp/terraform-provider-aws/internal/service/shield"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	tfshield "terraform-provider-awsgps/internal/service/shield"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccShieldProtectionHealthCheckAssociation_basic(t *testing.T) {

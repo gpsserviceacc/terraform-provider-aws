@@ -5,7 +5,7 @@ package sdkdiag
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"terraform-provider-awsgps/internal/errs"
 )
 
 // Must is a generic implementation of the Go Must idiom [1, 2]. It panics if

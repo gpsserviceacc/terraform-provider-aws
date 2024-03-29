@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"terraform-provider-awsgps/internal/acctest"
 )
 
 func TestARNParseFunction_known(t *testing.T) {

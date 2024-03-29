@@ -12,9 +12,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/ses"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/names"
 )
 
 func testAccActiveReceiptRuleSetDataSource_basic(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/eks"
 	"github.com/aws/aws-sdk-go-v2/service/eks/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"terraform-provider-awsgps/internal/errs"
 )
 
 func FindAddonByClusterNameAndAddonName(ctx context.Context, conn *eks.Client, clusterName, addonName string) (*types.Addon, error) {

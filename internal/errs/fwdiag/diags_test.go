@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-framework/diag"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
+	"terraform-provider-awsgps/internal/errs/fwdiag"
 )
 
 func TestDiagnosticsError(t *testing.T) {

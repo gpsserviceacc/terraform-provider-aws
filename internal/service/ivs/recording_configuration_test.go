@@ -16,12 +16,12 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	tfivs "github.com/hashicorp/terraform-provider-aws/internal/service/ivs"
-	tfs3 "github.com/hashicorp/terraform-provider-aws/internal/service/s3"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/create"
+	tfivs "terraform-provider-awsgps/internal/service/ivs"
+	tfs3 "terraform-provider-awsgps/internal/service/s3"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccIVSRecordingConfiguration_basic(t *testing.T) {

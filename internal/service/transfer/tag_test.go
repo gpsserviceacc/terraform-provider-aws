@@ -9,9 +9,9 @@ import (
 
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tftransfer "github.com/hashicorp/terraform-provider-aws/internal/service/transfer"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tftransfer "terraform-provider-awsgps/internal/service/transfer"
+	"terraform-provider-awsgps/names"
 )
 
 func testAccTag_basic(t *testing.T) {

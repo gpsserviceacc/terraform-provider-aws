@@ -6,7 +6,7 @@ package fms_test
 import (
 	"testing"
 
-	tffms "github.com/hashicorp/terraform-provider-aws/internal/service/fms"
+	tffms "terraform-provider-awsgps/internal/service/fms"
 )
 
 func TestRemoveEmptyFieldsFromJSON(t *testing.T) {

@@ -13,11 +13,11 @@ import (
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/envvar"
-	tfmacie2 "github.com/hashicorp/terraform-provider-aws/internal/service/macie2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/envvar"
+	tfmacie2 "terraform-provider-awsgps/internal/service/macie2"
+	"terraform-provider-awsgps/names"
 )
 
 const (

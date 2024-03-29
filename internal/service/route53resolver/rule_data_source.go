@@ -11,8 +11,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	"terraform-provider-awsgps/internal/conns"
+	tftags "terraform-provider-awsgps/internal/tags"
 )
 
 // @SDKDataSource("aws_route53_resolver_rule")
@@ -126,7 +126,7 @@ func dataSourceRuleRead(ctx context.Context, d *schema.ResourceData, meta interf
 	d.Set("rule_type", rule.RuleType)
 	shareStatus := aws.StringValue(rule.ShareStatus)
 	d.Set("share_status", shareStatus)
-	// https://github.com/hashicorp/terraform-provider-aws/issues/10211
+	// https://terraform-provider-awsgps/issues/10211
 	if shareStatus != route53resolver.ShareStatusSharedWithMe {
 		tags, err := listTags(ctx, conn, arn)
 

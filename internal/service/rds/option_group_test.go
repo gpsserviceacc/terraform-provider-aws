@@ -16,11 +16,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfrds "github.com/hashicorp/terraform-provider-aws/internal/service/rds"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfrds "terraform-provider-awsgps/internal/service/rds"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccRDSOptionGroup_basic(t *testing.T) {
@@ -425,7 +425,7 @@ func TestAccRDSOptionGroup_oracleOptionsUpdate(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/1876
+// Reference: https://terraform-provider-awsgps/issues/1876
 func TestAccRDSOptionGroup_OptionOptionSettings_multipleNonDefault(t *testing.T) {
 	ctx := acctest.Context(t)
 	var optionGroup1, optionGroup2 rds.OptionGroup
@@ -490,7 +490,7 @@ func TestAccRDSOptionGroup_multipleOptions(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7114
+// Reference: https://terraform-provider-awsgps/issues/7114
 func TestAccRDSOptionGroup_Tags_withOptions(t *testing.T) {
 	ctx := acctest.Context(t)
 	var optionGroup1, optionGroup2, optionGroup3 rds.OptionGroup
@@ -540,7 +540,7 @@ func TestAccRDSOptionGroup_Tags_withOptions(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/21367
+// https://terraform-provider-awsgps/issues/21367
 func TestAccRDSOptionGroup_badDiffs(t *testing.T) {
 	ctx := acctest.Context(t)
 	var optionGroup1 rds.OptionGroup

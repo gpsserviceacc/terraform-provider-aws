@@ -17,7 +17,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/names/data"
+	"terraform-provider-awsgps/names/data"
 )
 
 const (

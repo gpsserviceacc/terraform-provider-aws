@@ -15,10 +15,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	fwflex "github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/framework"
+	fwflex "terraform-provider-awsgps/internal/framework/flex"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
+	"terraform-provider-awsgps/names"
 )
 
 // @FrameworkDataSource(name="Foundation Models")

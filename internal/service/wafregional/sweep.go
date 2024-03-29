@@ -14,9 +14,9 @@ import (
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	tfwaf "github.com/hashicorp/terraform-provider-aws/internal/service/waf"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv1"
+	tfwaf "terraform-provider-awsgps/internal/service/waf"
+	"terraform-provider-awsgps/internal/sweep"
+	"terraform-provider-awsgps/internal/sweep/awsv1"
 )
 
 func RegisterSweepers() {

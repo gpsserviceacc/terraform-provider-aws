@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/YakDriver/regexache"
-	tfkms "github.com/hashicorp/terraform-provider-aws/internal/service/kms"
+	tfkms "terraform-provider-awsgps/internal/service/kms"
 )
 
 func TestAliasARNToKeyARN(t *testing.T) {

@@ -6,9 +6,9 @@ import (
 	"context"
 	"slices"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
+	"terraform-provider-awsgps/internal/conns"
 {{- range .Services }}
-	"github.com/hashicorp/terraform-provider-aws/internal/service/{{ .ProviderPackage }}"
+	"terraform-provider-awsgps/internal/service/{{ .ProviderPackage }}"
 {{- end }}
 )
 

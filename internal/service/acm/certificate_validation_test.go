@@ -12,10 +12,10 @@ import (
 	"github.com/YakDriver/regexache"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfacm "github.com/hashicorp/terraform-provider-aws/internal/service/acm"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfacm "terraform-provider-awsgps/internal/service/acm"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccACMCertificateValidation_basic(t *testing.T) {
@@ -202,7 +202,7 @@ func TestAccACMCertificateValidation_validationRecordFQDNSWildcard(t *testing.T)
 					testAccCheckCertificateValidationExists(ctx, resourceName),
 					resource.TestCheckResourceAttrPair(resourceName, "certificate_arn", certificateResourceName, "arn"),
 				),
-				// ExpectNonEmptyPlan: true, // https://github.com/hashicorp/terraform-provider-aws/issues/16913
+				// ExpectNonEmptyPlan: true, // https://terraform-provider-awsgps/issues/16913
 			},
 		},
 	})
@@ -227,7 +227,7 @@ func TestAccACMCertificateValidation_validationRecordFQDNSWildcardAndRoot(t *tes
 					testAccCheckCertificateValidationExists(ctx, resourceName),
 					resource.TestCheckResourceAttrPair(resourceName, "certificate_arn", certificateResourceName, "arn"),
 				),
-				// ExpectNonEmptyPlan: true, // https://github.com/hashicorp/terraform-provider-aws/issues/16913
+				// ExpectNonEmptyPlan: true, // https://terraform-provider-awsgps/issues/16913
 			},
 		},
 	})

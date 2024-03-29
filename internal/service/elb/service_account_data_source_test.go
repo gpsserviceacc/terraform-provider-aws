@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfelb "github.com/hashicorp/terraform-provider-aws/internal/service/elb"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfelb "terraform-provider-awsgps/internal/service/elb"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccELBServiceAccountDataSource_basic(t *testing.T) {

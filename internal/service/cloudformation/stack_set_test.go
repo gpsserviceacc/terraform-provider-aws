@@ -16,11 +16,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfcloudformation "github.com/hashicorp/terraform-provider-aws/internal/service/cloudformation"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfcloudformation "terraform-provider-awsgps/internal/service/cloudformation"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccCloudFormationStackSet_basic(t *testing.T) {
@@ -530,7 +530,7 @@ func TestAccCloudFormationStackSet_Parameters_default(t *testing.T) {
 func TestAccCloudFormationStackSet_Parameters_noEcho(t *testing.T) {
 	acctest.Skip(t, "this resource does not currently ignore CloudFormation template parameters with the NoEcho property")
 	// Additional references:
-	//  * https://github.com/hashicorp/terraform-provider-aws/issues/55
+	//  * https://terraform-provider-awsgps/issues/55
 
 	ctx := acctest.Context(t)
 	var stackSet1, stackSet2 cloudformation.StackSet
@@ -749,7 +749,7 @@ func TestAccCloudFormationStackSet_templateURL(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/19015.
+// https://terraform-provider-awsgps/issues/19015.
 func TestAccCloudFormationStackSet_autoDeploymentEnabled(t *testing.T) {
 	ctx := acctest.Context(t)
 	var stackSet cloudformation.StackSet
@@ -788,7 +788,7 @@ func TestAccCloudFormationStackSet_autoDeploymentEnabled(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/19015.
+// https://terraform-provider-awsgps/issues/19015.
 func TestAccCloudFormationStackSet_autoDeploymentDisabled(t *testing.T) {
 	ctx := acctest.Context(t)
 	var stackSet cloudformation.StackSet
@@ -827,7 +827,7 @@ func TestAccCloudFormationStackSet_autoDeploymentDisabled(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/32536.
+// https://terraform-provider-awsgps/issues/32536.
 func TestAccCloudFormationStackSet_delegatedAdministrator(t *testing.T) {
 	ctx := acctest.Context(t)
 	providers := make(map[string]*schema.Provider)

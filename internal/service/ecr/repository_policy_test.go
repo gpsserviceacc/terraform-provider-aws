@@ -15,10 +15,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfecr "github.com/hashicorp/terraform-provider-aws/internal/service/ecr"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfecr "terraform-provider-awsgps/internal/service/ecr"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccECRRepositoryPolicy_basic(t *testing.T) {
@@ -88,7 +88,7 @@ func TestAccECRRepositoryPolicy_IAM_basic(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19365
+// Reference: https://terraform-provider-awsgps/issues/19365
 func TestAccECRRepositoryPolicy_IAM_principalOrder(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)

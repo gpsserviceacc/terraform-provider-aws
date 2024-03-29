@@ -11,10 +11,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/framework"
+	"terraform-provider-awsgps/internal/framework/flex"
+	"terraform-provider-awsgps/names"
 )
 
 // @FrameworkDataSource(name="Security Config")

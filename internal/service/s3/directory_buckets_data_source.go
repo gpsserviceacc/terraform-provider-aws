@@ -12,10 +12,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/framework"
+	"terraform-provider-awsgps/internal/framework/flex"
+	tfslices "terraform-provider-awsgps/internal/slices"
+	"terraform-provider-awsgps/names"
 )
 
 // @FrameworkDataSource(name="Directory Buckets")

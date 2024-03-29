@@ -15,10 +15,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/tfsdk"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	fwflex "github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tfmaps "github.com/hashicorp/terraform-provider-aws/internal/maps"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"terraform-provider-awsgps/internal/flex"
+	fwflex "terraform-provider-awsgps/internal/framework/flex"
+	tfmaps "terraform-provider-awsgps/internal/maps"
+	tfslices "terraform-provider-awsgps/internal/slices"
 )
 
 func newFilter(name string, values []string) *ec2_sdkv1.Filter {

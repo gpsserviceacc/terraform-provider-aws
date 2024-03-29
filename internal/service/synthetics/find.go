@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/synthetics"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/synthetics/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 var errResourceNotFoundException = &awstypes.ResourceNotFoundException{}

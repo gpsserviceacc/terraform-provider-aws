@@ -9,7 +9,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"terraform-provider-awsgps/internal/errs"
 )
 
 func TestAddIsErrorRetryables(t *testing.T) {

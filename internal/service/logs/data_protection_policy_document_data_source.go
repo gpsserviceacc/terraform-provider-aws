@@ -11,9 +11,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
 )
 
 // @SDKDataSource("aws_cloudwatch_log_data_protection_policy_document")

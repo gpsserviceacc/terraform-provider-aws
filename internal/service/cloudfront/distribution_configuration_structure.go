@@ -19,8 +19,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudfront"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/id"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/flex"
 )
 
 // Assemble the *cloudfront.DistributionConfig variable. Calls out to various

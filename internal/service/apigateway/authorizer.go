@@ -17,11 +17,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 const DefaultAuthorizerTTL = 300
@@ -131,7 +131,7 @@ func resourceAuthorizerCreate(ctx context.Context, d *schema.ResourceData, meta 
 		// While the CreateAuthorizer method allows one to pass AuthorizerCredentials
 		// regardless of authorizer Type, the API ignores this setting if the authorizer
 		// is of Type "COGNITO_USER_POOLS"; thus, a PatchOperation is used as an alternative.
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/16613
+		// Reference: https://terraform-provider-awsgps/issues/16613
 		if aws.StringValue(input.Type) != apigateway.AuthorizerTypeCognitoUserPools {
 			input.AuthorizerCredentials = aws.String(v.(string))
 		} else {

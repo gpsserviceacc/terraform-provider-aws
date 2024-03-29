@@ -13,9 +13,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/ecr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	itypes "terraform-provider-awsgps/internal/types"
 )
 
 // @SDKDataSource("aws_ecr_authorization_token")

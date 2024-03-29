@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 type Op[T any] interface {

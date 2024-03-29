@@ -9,9 +9,9 @@ import (
 	"github.com/YakDriver/regexache"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccVPCDefaultVPCDHCPOptions_serial(t *testing.T) {
@@ -80,7 +80,7 @@ func testAccDefaultVPCDHCPOptions_owner(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/25561.
+// https://terraform-provider-awsgps/issues/25561.
 // Don't forget to unset TF_CLI_CONFIG_FILE.
 func testAccDefaultVPCDHCPOptions_v420Regression(t *testing.T) {
 	ctx := acctest.Context(t)

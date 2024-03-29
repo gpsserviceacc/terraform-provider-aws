@@ -11,9 +11,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/batch"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	tftags "terraform-provider-awsgps/internal/tags"
 )
 
 // @SDKDataSource("aws_batch_job_queue")

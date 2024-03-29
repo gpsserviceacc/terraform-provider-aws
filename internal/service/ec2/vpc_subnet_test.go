@@ -14,11 +14,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccVPCSubnet_basic(t *testing.T) {
@@ -421,7 +421,7 @@ func TestAccVPCSubnet_defaultAndIgnoreTags(t *testing.T) {
 // attributes are correctly determined when the provider-level default_tags block
 // is left unused and resource tags are only known at apply time, thereby
 // eliminating "Inconsistent final plan" errors
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/18366
+// Reference: https://terraform-provider-awsgps/issues/18366
 func TestAccVPCSubnet_updateTagsKnownAtApply(t *testing.T) {
 	ctx := acctest.Context(t)
 	var subnet ec2.Subnet

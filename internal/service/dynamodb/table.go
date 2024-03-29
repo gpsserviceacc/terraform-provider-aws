@@ -23,15 +23,15 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/service/kms"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	"terraform-provider-awsgps/internal/service/kms"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 const (
@@ -108,7 +108,7 @@ func ResourceTable() *schema.Resource {
 			},
 			customdiff.ForceNewIfChange("restore_source_name", func(_ context.Context, old, new, meta interface{}) bool {
 				// If they differ force new unless new is cleared
-				// https://github.com/hashicorp/terraform-provider-aws/issues/25214
+				// https://terraform-provider-awsgps/issues/25214
 				return old.(string) != new.(string) && new.(string) != ""
 			}),
 			verify.SetTagsDiff,
@@ -2154,7 +2154,7 @@ func expandLocalSecondaryIndexes(cfg []interface{}, keySchemaM map[string]interf
 		m := lsi.(map[string]interface{})
 		idxName := m[names.AttrName].(string)
 
-		// TODO: See https://github.com/hashicorp/terraform-provider-aws/issues/3176
+		// TODO: See https://terraform-provider-awsgps/issues/3176
 		if _, ok := m["hash_key"]; !ok {
 			m["hash_key"] = keySchemaM["hash_key"]
 		}

@@ -10,8 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws/retry"
 	"github.com/aws/aws-sdk-go-v2/service/kafka"
 	"github.com/aws/aws-sdk-go-v2/service/kafka/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
 )
 
 // NewClient returns a new AWS SDK for Go v2 client for this service package's AWS API.

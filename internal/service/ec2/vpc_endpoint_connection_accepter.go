@@ -14,9 +14,9 @@ import (
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 // @SDKResource("aws_vpc_endpoint_connection_accepter")

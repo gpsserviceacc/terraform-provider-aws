@@ -13,10 +13,10 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/ssoadmin/types"
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv2"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/sdk"
+	"terraform-provider-awsgps/internal/sweep"
+	"terraform-provider-awsgps/internal/sweep/awsv2"
+	"terraform-provider-awsgps/internal/sweep/framework"
+	"terraform-provider-awsgps/internal/sweep/sdk"
 )
 
 func RegisterSweepers() {

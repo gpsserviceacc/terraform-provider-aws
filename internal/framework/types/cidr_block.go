@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
+	itypes "terraform-provider-awsgps/internal/types"
 )
 
 var (

@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfram "github.com/hashicorp/terraform-provider-aws/internal/service/ram"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfram "terraform-provider-awsgps/internal/service/ram"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccRAMSharingWithOrganization_serial(t *testing.T) {

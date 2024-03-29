@@ -6,7 +6,7 @@ package apigatewayv2
 import (
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
+	"terraform-provider-awsgps/internal/create"
 )
 
 // hashStringCaseInsensitive hashes strings in a case insensitive manner.

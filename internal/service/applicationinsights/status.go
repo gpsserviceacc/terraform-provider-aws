@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/applicationinsights"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func statusApplication(ctx context.Context, conn *applicationinsights.ApplicationInsights, name string) retry.StateRefreshFunc {

@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/efs"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func FindBackupPolicyByID(ctx context.Context, conn *efs.EFS, id string) (*efs.BackupPolicy, error) {

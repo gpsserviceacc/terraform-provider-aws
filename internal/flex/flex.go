@@ -11,9 +11,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tfmaps "github.com/hashicorp/terraform-provider-aws/internal/maps"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
+	tfmaps "terraform-provider-awsgps/internal/maps"
+	tfslices "terraform-provider-awsgps/internal/slices"
+	itypes "terraform-provider-awsgps/internal/types"
 )
 
 const (

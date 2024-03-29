@@ -16,10 +16,10 @@ import (
 	{{ .GoV2Package }}_sdkv2 "github.com/aws/aws-sdk-go-v2/service/{{ .GoV2Package }}"
 	{{- end }}
 {{- end }}
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/types"
 {{- if ne .ProviderPackage "meta" }}
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/names"
 {{- end }}
 )
 

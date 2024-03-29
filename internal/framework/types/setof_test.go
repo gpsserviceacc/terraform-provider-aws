@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
 )
 
 func TestSetOfStringFromTerraform(t *testing.T) {

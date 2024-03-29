@@ -15,11 +15,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfkms "github.com/hashicorp/terraform-provider-aws/internal/service/kms"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfkms "terraform-provider-awsgps/internal/service/kms"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccKMSKey_basic(t *testing.T) {
@@ -316,7 +316,7 @@ func TestAccKMSKey_Policy_iamRoleUpdate(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/11801
+// Reference: https://terraform-provider-awsgps/issues/11801
 func TestAccKMSKey_Policy_iamRoleOrder(t *testing.T) {
 	ctx := acctest.Context(t)
 	var key kms.KeyMetadata
@@ -360,7 +360,7 @@ func TestAccKMSKey_Policy_iamRoleOrder(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7646
+// Reference: https://terraform-provider-awsgps/issues/7646
 func TestAccKMSKey_Policy_iamServiceLinkedRole(t *testing.T) {
 	ctx := acctest.Context(t)
 	var key kms.KeyMetadata
@@ -517,7 +517,7 @@ func TestAccKMSKey_tags(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/26174.
+// https://terraform-provider-awsgps/issues/26174.
 func TestAccKMSKey_ignoreTags(t *testing.T) {
 	ctx := acctest.Context(t)
 	var key kms.KeyMetadata
@@ -559,7 +559,7 @@ func TestAccKMSKey_ignoreTags(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/33219.
+// https://terraform-provider-awsgps/issues/33219.
 func TestAccKMSKey_updateTagsEmptyValue(t *testing.T) {
 	ctx := acctest.Context(t)
 	var key kms.KeyMetadata

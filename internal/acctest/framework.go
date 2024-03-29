@@ -16,7 +16,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
+	"terraform-provider-awsgps/internal/errs/fwdiag"
 )
 
 // Terraform Plugin Framework variants of standard acceptance test helpers.

@@ -15,10 +15,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	tfs3 "github.com/hashicorp/terraform-provider-aws/internal/service/s3"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	tfs3 "terraform-provider-awsgps/internal/service/s3"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccEC2EBSSnapshotImport_basic(t *testing.T) {

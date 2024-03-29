@@ -11,8 +11,8 @@ import (
 	"slices"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tfjson "github.com/hashicorp/terraform-provider-aws/internal/json"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	tfjson "terraform-provider-awsgps/internal/json"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html#CHAP_Tasks.CustomizingTasks.TaskSettings.Example

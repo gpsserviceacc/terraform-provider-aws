@@ -19,9 +19,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 const (
@@ -44,7 +44,7 @@ func ResourceRecord() *schema.Resource {
 				// We check that we have parsed the id into the correct number of segments.
 				// We need at least 3 segments!
 				// However, parts[1] can be the empty string if it is the root domain of the zone,
-				// and isn't using a FQDN. See https://github.com/hashicorp/terraform-provider-aws/issues/4792
+				// and isn't using a FQDN. See https://terraform-provider-awsgps/issues/4792
 				if parts[0] == "" || parts[2] == "" {
 					return nil, fmt.Errorf("unexpected format of ID (%q), expected ZONEID_RECORDNAME_TYPE_SET-IDENTIFIER (e.g. Z4KAPRWWNC7JR_dev.example.com_NS_dev), where SET-IDENTIFIER is optional", d.Id())
 				}

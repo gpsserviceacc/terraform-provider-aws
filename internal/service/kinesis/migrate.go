@@ -7,7 +7,7 @@ import (
 	"context"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	tftags "terraform-provider-awsgps/internal/tags"
 )
 
 func resourceStreamResourceV0() *schema.Resource {

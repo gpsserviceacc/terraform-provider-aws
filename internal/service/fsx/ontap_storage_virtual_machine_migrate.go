@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/fsx"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/names"
 )
 
 func ResourceONTAPStorageVirtualMachineV0() *schema.Resource {

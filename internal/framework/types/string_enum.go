@@ -18,8 +18,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"terraform-provider-awsgps/internal/enum"
+	tfslices "terraform-provider-awsgps/internal/slices"
 )
 
 type dummyValueser string

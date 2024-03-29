@@ -15,7 +15,7 @@ import (
 	awspolicy "github.com/hashicorp/awspolicyequivalence"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/structure"
-	tfjson "github.com/hashicorp/terraform-provider-aws/internal/json"
+	tfjson "terraform-provider-awsgps/internal/json"
 )
 
 // SuppressEquivalentPolicyDiffs returns a difference suppression function that compares

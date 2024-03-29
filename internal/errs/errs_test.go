@@ -6,7 +6,7 @@ package errs_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"terraform-provider-awsgps/internal/errs"
 )
 
 type FirstError struct{}

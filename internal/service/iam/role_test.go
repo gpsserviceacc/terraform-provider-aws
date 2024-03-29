@@ -16,11 +16,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfiam "github.com/hashicorp/terraform-provider-aws/internal/service/iam"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfiam "terraform-provider-awsgps/internal/service/iam"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccIAMRole_basic(t *testing.T) {
@@ -187,8 +187,8 @@ func TestAccIAMRole_testNameChange(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/23288
-// https://github.com/hashicorp/terraform-provider-aws/issues/28833
+// https://terraform-provider-awsgps/issues/23288
+// https://terraform-provider-awsgps/issues/28833
 func TestAccIAMRole_diffs(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf iam.Role
@@ -325,7 +325,7 @@ func TestAccIAMRole_diffs(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/28835
+// https://terraform-provider-awsgps/issues/28835
 func TestAccIAMRole_diffsCondition(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf iam.Role
@@ -637,7 +637,7 @@ func TestAccIAMRole_InlinePolicy_basic(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19444
+// Reference: https://terraform-provider-awsgps/issues/19444
 func TestAccIAMRole_InlinePolicy_ignoreOrder(t *testing.T) {
 	ctx := acctest.Context(t)
 	var role iam.Role

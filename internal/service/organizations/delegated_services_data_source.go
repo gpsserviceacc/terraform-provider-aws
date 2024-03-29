@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/organizations"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // @SDKDataSource("aws_organizations_delegated_services")

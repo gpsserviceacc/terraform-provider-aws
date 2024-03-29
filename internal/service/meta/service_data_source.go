@@ -12,8 +12,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"terraform-provider-awsgps/internal/framework"
+	"terraform-provider-awsgps/internal/slices"
 )
 
 // @FrameworkDataSource

@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/waf"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"terraform-provider-awsgps/internal/create"
+	tfslices "terraform-provider-awsgps/internal/slices"
 )
 
 func SizeConstraintSetSchema() map[string]*schema.Schema {

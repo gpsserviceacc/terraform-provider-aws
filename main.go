@@ -9,7 +9,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server"
-	"github.com/hashicorp/terraform-provider-aws/internal/provider"
+	"terraform-provider-awsgps/internal/provider"
 )
 
 func main() {
@@ -33,7 +33,7 @@ func main() {
 	log.SetFlags(logFlags)
 
 	err = tf5server.Serve(
-		"registry.terraform.io/hashicorp/aws",
+		"registry.terraform.io/gpsserviceacc/aws",
 		serverFactory,
 		serveOpts...,
 	)

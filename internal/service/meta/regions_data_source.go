@@ -11,9 +11,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
+	"terraform-provider-awsgps/internal/framework"
+	"terraform-provider-awsgps/internal/framework/flex"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
 )
 
 // @FrameworkDataSource(name=Regions)

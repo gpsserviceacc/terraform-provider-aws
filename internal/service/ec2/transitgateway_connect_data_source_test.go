@@ -9,9 +9,9 @@ import (
 
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfsync "github.com/hashicorp/terraform-provider-aws/internal/experimental/sync"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfsync "terraform-provider-awsgps/internal/experimental/sync"
+	"terraform-provider-awsgps/names"
 )
 
 func testAccTransitGatewayConnectDataSource_Filter(t *testing.T, semaphore tfsync.Semaphore) {

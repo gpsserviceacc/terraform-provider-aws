@@ -11,9 +11,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/mq/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/enum"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
 )
 
 // @SDKDataSource("aws_mq_broker_instance_type_offerings", name="Broker Instance Type Offerings")

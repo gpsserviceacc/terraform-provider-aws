@@ -12,7 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/private/protocol/json/jsonutil"
 	"github.com/aws/aws-sdk-go/service/batch"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	tfslices "terraform-provider-awsgps/internal/slices"
 )
 
 type containerProperties batch.ContainerProperties

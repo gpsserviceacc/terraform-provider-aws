@@ -16,15 +16,15 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/customdiff"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	tfslices "terraform-provider-awsgps/internal/slices"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 // @SDKResource("aws_elasticache_subnet_group", name="Subnet Group")
@@ -202,7 +202,7 @@ func resourceSubnetGroupDelete(ctx context.Context, d *schema.ResourceData, meta
 func resourceSubnetGroupCustomizeDiff(ctx context.Context, diff *schema.ResourceDiff, meta interface{}) error {
 	// Reserved ElastiCache Subnet Groups with the name "default" do not support tagging,
 	// thus we must suppress the diff originating from the provider-level default_tags configuration.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19213.
+	// Reference: https://terraform-provider-awsgps/issues/19213.
 	defaultTagsConfig := meta.(*conns.AWSClient).DefaultTagsConfig
 	if len(defaultTagsConfig.GetTags()) > 0 && diff.Get("name").(string) == "default" {
 		return nil

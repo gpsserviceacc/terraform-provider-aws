@@ -16,8 +16,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
+	"terraform-provider-awsgps/internal/errs"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
 )
 
 func TestFlatten(t *testing.T) {

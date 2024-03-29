@@ -9,7 +9,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
+	"terraform-provider-awsgps/internal/errs/fwdiag"
 )
 
 // TimeFromFramework converts a Framework RFC3339 value to a time pointer.

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/namevaluesfiltersv2"
+	"terraform-provider-awsgps/internal/generate/namevaluesfiltersv2"
 )
 
 const filename = `service_filters_v2_gen.go`

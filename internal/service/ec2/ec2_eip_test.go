@@ -14,11 +14,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccEC2EIP_basic(t *testing.T) {
@@ -212,7 +212,7 @@ func TestAccEC2EIP_instance(t *testing.T) {
 }
 
 // Regression test for https://github.com/hashicorp/terraform/issues/3429 (now
-// https://github.com/hashicorp/terraform-provider-aws/issues/42)
+// https://terraform-provider-awsgps/issues/42)
 func TestAccEC2EIP_Instance_reassociate(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf ec2.Address

@@ -27,16 +27,16 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	itypes "terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 // @SDKResource("aws_instance", name="Instance")
@@ -1381,12 +1381,12 @@ func resourceInstanceRead(ctx context.Context, d *schema.ResourceData, meta inte
 	}
 
 	// AWS Standard will return InstanceCreditSpecification.NotSupported errors for EC2 Instance IDs outside T2 and T3 instance types
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/8055
+	// Reference: https://terraform-provider-awsgps/issues/8055
 	if aws.BoolValue(instanceTypeInfo.BurstablePerformanceSupported) {
 		instanceCreditSpecification, err := FindInstanceCreditSpecificationByID(ctx, conn, d.Id())
 
 		// Ignore UnsupportedOperation errors for AWS China and GovCloud (US).
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/pull/4362.
+		// Reference: https://terraform-provider-awsgps/pull/4362.
 		if tfawserr.ErrCodeEquals(err, errCodeUnsupportedOperation) {
 			err = nil
 		}
@@ -1944,7 +1944,7 @@ func resourceInstanceUpdate(ctx context.Context, d *schema.ResourceData, meta in
 		if d.HasChange("root_block_device.0.iops") {
 			if v, ok := d.Get("root_block_device.0.iops").(int); ok && v != 0 {
 				// Enforce IOPs usage with a valid volume type
-				// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12667
+				// Reference: https://terraform-provider-awsgps/issues/12667
 				if t, ok := d.Get("root_block_device.0.volume_type").(string); ok && t != ec2.VolumeTypeIo1 && t != ec2.VolumeTypeIo2 && t != ec2.VolumeTypeGp3 {
 					if t == "" {
 						// Volume defaults to gp2
@@ -2548,7 +2548,7 @@ func readBlockDeviceMappingsFromConfig(ctx context.Context, d *schema.ResourceDa
 						ebs.Iops = aws.Int64(int64(iops))
 					} else {
 						// Enforce IOPs usage with a valid volume type
-						// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12667
+						// Reference: https://terraform-provider-awsgps/issues/12667
 						return nil, fmt.Errorf("creating resource: iops attribute not supported for ebs_block_device with volume_type %s", v)
 					}
 				}
@@ -2623,7 +2623,7 @@ func readBlockDeviceMappingsFromConfig(ctx context.Context, d *schema.ResourceDa
 						ebs.Iops = aws.Int64(int64(iops))
 					} else {
 						// Enforce IOPs usage with a valid volume type
-						// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12667
+						// Reference: https://terraform-provider-awsgps/issues/12667
 						return nil, fmt.Errorf("creating resource: iops attribute not supported for root_block_device with volume_type %s", v)
 					}
 				}
@@ -3089,7 +3089,7 @@ func startInstance(ctx context.Context, conn *ec2.EC2, id string, retry bool, ti
 		"ec2_instance_id": id,
 	})
 	if retry {
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/16433.
+		// Reference: https://terraform-provider-awsgps/issues/16433.
 		_, err = tfresource.RetryWhenAWSErrMessageContains(ctx, ec2PropagationTimeout,
 			func() (interface{}, error) {
 				return conn.StartInstancesWithContext(ctx, &ec2.StartInstancesInput{

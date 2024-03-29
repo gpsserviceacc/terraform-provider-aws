@@ -15,11 +15,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/create"
+	"terraform-provider-awsgps/internal/framework"
+	"terraform-provider-awsgps/internal/framework/flex"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/names"
 )
 
 // @FrameworkDataSource(name="Collection")

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
+	"terraform-provider-awsgps/internal/create"
 )
 
 // RouteCreateID returns a route resource ID.

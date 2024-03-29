@@ -11,10 +11,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/batch"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfecs "github.com/hashicorp/terraform-provider-aws/internal/service/ecs"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfecs "terraform-provider-awsgps/internal/service/ecs"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccECSTag_basic(t *testing.T) {
@@ -68,7 +68,7 @@ func TestAccECSTag_disappears(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/11951
+// Reference: https://terraform-provider-awsgps/issues/11951
 func TestAccECSTag_ResourceARN_batchComputeEnvironment(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)

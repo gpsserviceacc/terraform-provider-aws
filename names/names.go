@@ -20,7 +20,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/names/data"
+	"terraform-provider-awsgps/names/data"
 )
 
 // Endpoint constants defined by the AWS SDK v1 but not defined in the AWS SDK v2.

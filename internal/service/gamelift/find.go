@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/gamelift"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func FindBuildByID(ctx context.Context, conn *gamelift.GameLift, id string) (*gamelift.Build, error) {

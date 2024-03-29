@@ -13,14 +13,14 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	fwtypes "github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/framework/flex"
+	"terraform-provider-awsgps/internal/slices"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/internal/types/option"
+	"terraform-provider-awsgps/names"
 )
 
 // A data source interceptor is functionality invoked during the data source's CRUD request lifecycle.
@@ -415,7 +415,7 @@ func (r tagsResourceInterceptor) read(ctx context.Context, request resource.Read
 				}
 
 				// Some old resources may not have the required attribute set after Read:
-				// https://github.com/hashicorp/terraform-provider-aws/issues/31180
+				// https://terraform-provider-awsgps/issues/31180
 				if identifier != "" {
 					// If the service package has a generic resource list tags methods, call it.
 					var err error
@@ -547,7 +547,7 @@ func (r tagsResourceInterceptor) update(ctx context.Context, request resource.Up
 				}
 
 				// Some old resources may not have the required attribute set after Read:
-				// https://github.com/hashicorp/terraform-provider-aws/issues/31180
+				// https://terraform-provider-awsgps/issues/31180
 				if identifier != "" {
 					// If the service package has a generic resource update tags methods, call it.
 					var err error

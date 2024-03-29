@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tfiam "github.com/hashicorp/terraform-provider-aws/internal/service/iam"
-	tforganizations "github.com/hashicorp/terraform-provider-aws/internal/service/organizations"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	tfiam "terraform-provider-awsgps/internal/service/iam"
+	tforganizations "terraform-provider-awsgps/internal/service/organizations"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 // @SDKResource("aws_ram_sharing_with_organization", name="Sharing With Organization")

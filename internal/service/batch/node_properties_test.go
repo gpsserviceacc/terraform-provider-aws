@@ -6,7 +6,7 @@ package batch_test
 import (
 	"testing"
 
-	tfbatch "github.com/hashicorp/terraform-provider-aws/internal/service/batch"
+	tfbatch "terraform-provider-awsgps/internal/service/batch"
 )
 
 func TestEquivalentNodePropertiesJSON(t *testing.T) {

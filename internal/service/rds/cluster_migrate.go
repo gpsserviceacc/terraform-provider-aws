@@ -7,8 +7,8 @@ import (
 	"context"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/names"
 )
 
 // Resource schema as at v5.25.0 without validators etc.

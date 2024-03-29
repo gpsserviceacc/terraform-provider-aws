@@ -16,10 +16,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfservicecatalog "github.com/hashicorp/terraform-provider-aws/internal/service/servicecatalog"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfservicecatalog "terraform-provider-awsgps/internal/service/servicecatalog"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccServiceCatalogProvisionedProduct_basic(t *testing.T) {
@@ -259,7 +259,7 @@ func TestAccServiceCatalogProvisionedProduct_ProductName_update(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/26271
+// Reference: https://terraform-provider-awsgps/issues/26271
 func TestAccServiceCatalogProvisionedProduct_ProvisioningArtifactName_update(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_servicecatalog_provisioned_product.test"

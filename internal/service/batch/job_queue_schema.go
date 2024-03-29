@@ -16,10 +16,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/framework"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/names"
 )
 
 func jobQueueSchema0(ctx context.Context) schema.Schema {

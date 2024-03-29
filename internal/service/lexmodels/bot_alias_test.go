@@ -16,10 +16,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tflexmodels "github.com/hashicorp/terraform-provider-aws/internal/service/lexmodels"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tflexmodels "terraform-provider-awsgps/internal/service/lexmodels"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccLexModelsBotAlias_basic(t *testing.T) {

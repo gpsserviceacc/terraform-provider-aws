@@ -13,11 +13,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfapigateway "github.com/hashicorp/terraform-provider-aws/internal/service/apigateway"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfapigateway "terraform-provider-awsgps/internal/service/apigateway"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccAPIGatewayUsagePlan_basic(t *testing.T) {
@@ -269,7 +269,7 @@ func TestAccAPIGatewayUsagePlan_throttling(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/2057
+// https://terraform-provider-awsgps/issues/2057
 func TestAccAPIGatewayUsagePlan_throttlingInitialRateLimit(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf apigateway.UsagePlan

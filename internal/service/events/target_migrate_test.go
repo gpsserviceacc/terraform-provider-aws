@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfevents "github.com/hashicorp/terraform-provider-aws/internal/service/events"
+	"terraform-provider-awsgps/internal/acctest"
+	tfevents "terraform-provider-awsgps/internal/service/events"
 )
 
 func testResourceTargetStateDataV0() map[string]interface{} {

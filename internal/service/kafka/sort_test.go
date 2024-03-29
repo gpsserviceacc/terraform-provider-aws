@@ -6,7 +6,7 @@ package kafka_test
 import (
 	"testing"
 
-	tfkafka "github.com/hashicorp/terraform-provider-aws/internal/service/kafka"
+	tfkafka "terraform-provider-awsgps/internal/service/kafka"
 )
 
 func TestSortEndpointsString(t *testing.T) {

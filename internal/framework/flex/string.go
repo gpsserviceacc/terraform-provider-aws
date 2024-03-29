@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
 )
 
 // StringFromFramework converts a Framework String value to a string pointer.

@@ -6,7 +6,7 @@ package logs_test
 import (
 	"testing"
 
-	tflogs "github.com/hashicorp/terraform-provider-aws/internal/service/logs"
+	tflogs "terraform-provider-awsgps/internal/service/logs"
 )
 
 func TestTrimLogGroupARNWildcardSuffix(t *testing.T) {

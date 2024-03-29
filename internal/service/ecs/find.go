@@ -12,8 +12,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/ecs"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func FindCapacityProviderByARN(ctx context.Context, conn *ecs.ECS, arn string) (*ecs.CapacityProvider, error) {

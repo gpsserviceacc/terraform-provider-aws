@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tffsx "github.com/hashicorp/terraform-provider-aws/internal/service/fsx"
+	"terraform-provider-awsgps/internal/acctest"
+	tffsx "terraform-provider-awsgps/internal/service/fsx"
 )
 
 func testOntapStorageVirtualMachineStateDataV0() map[string]interface{} {

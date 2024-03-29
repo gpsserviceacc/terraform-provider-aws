@@ -5,8 +5,8 @@ package meta
 import (
 	"context"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/types"
 )
 
 type servicePackage struct{}

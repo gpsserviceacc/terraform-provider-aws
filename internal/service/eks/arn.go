@@ -17,7 +17,7 @@ import (
 	"strings"
 
 	awsarn "github.com/aws/aws-sdk-go-v2/aws/arn"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/names"
 )
 
 // Canonicalize validates IAM resources are appropriate for the authenticator

@@ -11,15 +11,15 @@ import (
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/slices"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/internal/types/option"
+	"terraform-provider-awsgps/names"
 )
 
 // schemaResourceData is an interface that implements functions from schema.ResourceData
@@ -260,7 +260,7 @@ func (r tagsResourceInterceptor) run(ctx context.Context, d schemaResourceData, 
 						}
 
 						// Some old resources may not have the required attribute set after Read:
-						// https://github.com/hashicorp/terraform-provider-aws/issues/31180
+						// https://terraform-provider-awsgps/issues/31180
 						if identifier != "" {
 							o, n := d.GetChange(names.AttrTagsAll)
 
@@ -319,7 +319,7 @@ func (r tagsResourceInterceptor) run(ctx context.Context, d schemaResourceData, 
 					}
 
 					// Some old resources may not have the required attribute set after Read:
-					// https://github.com/hashicorp/terraform-provider-aws/issues/31180
+					// https://terraform-provider-awsgps/issues/31180
 					if identifier != "" {
 						// If the service package has a generic resource list tags methods, call it.
 						var err error

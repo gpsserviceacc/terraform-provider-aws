@@ -17,11 +17,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tffirehose "github.com/hashicorp/terraform-provider-aws/internal/service/firehose"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tffirehose "terraform-provider-awsgps/internal/service/firehose"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccFirehoseDeliveryStream_basic(t *testing.T) {
@@ -597,7 +597,7 @@ func TestAccFirehoseDeliveryStream_ExtendedS3_errorOutputPrefix(t *testing.T) {
 			},
 			{
 				// Ensure the ErrorOutputPrefix can be updated to an empty value
-				// Reference: https://github.com/hashicorp/terraform-provider-aws/pull/11229#discussion_r356282765
+				// Reference: https://terraform-provider-awsgps/pull/11229#discussion_r356282765
 				Config: testAccDeliveryStreamConfig_extendedS3ErrorOutputPrefix(rName, ""),
 				Check: resource.ComposeTestCheckFunc(
 					testAccCheckDeliveryStreamExists(ctx, resourceName, &stream),
@@ -660,7 +660,7 @@ func TestAccFirehoseDeliveryStream_ExtendedS3_S3BackupConfiguration_ErrorOutputP
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12600
+// Reference: https://terraform-provider-awsgps/issues/12600
 func TestAccFirehoseDeliveryStream_ExtendedS3Processing_empty(t *testing.T) {
 	ctx := acctest.Context(t)
 	var stream types.DeliveryStreamDescription
@@ -1916,7 +1916,7 @@ func TestAccFirehoseDeliveryStream_openSearchServerlessUpdates(t *testing.T) {
 	})
 }
 
-// Regression test for https://github.com/hashicorp/terraform-provider-aws/issues/1657
+// Regression test for https://terraform-provider-awsgps/issues/1657
 func TestAccFirehoseDeliveryStream_missingProcessing(t *testing.T) {
 	ctx := acctest.Context(t)
 	var stream types.DeliveryStreamDescription

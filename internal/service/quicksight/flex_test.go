@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/quicksight"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tfquicksight "github.com/hashicorp/terraform-provider-aws/internal/service/quicksight"
+	tfquicksight "terraform-provider-awsgps/internal/service/quicksight"
 )
 
 func TestDataSourcePermissionsDiff(t *testing.T) {

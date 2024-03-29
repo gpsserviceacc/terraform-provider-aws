@@ -12,9 +12,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/sns/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/conns"
+	tfslices "terraform-provider-awsgps/internal/slices"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 // @SDKDataSource("aws_sns_topic")

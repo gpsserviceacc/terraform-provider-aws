@@ -12,11 +12,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfefs "github.com/hashicorp/terraform-provider-aws/internal/service/efs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfefs "terraform-provider-awsgps/internal/service/efs"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccEFSFileSystemPolicy_basic(t *testing.T) {
@@ -115,7 +115,7 @@ func TestAccEFSFileSystemPolicy_policyBypass(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/21968
+// Reference: https://terraform-provider-awsgps/issues/21968
 func TestAccEFSFileSystemPolicy_equivalentPolicies(t *testing.T) {
 	ctx := acctest.Context(t)
 	var desc efs.DescribeFileSystemPolicyOutput
@@ -143,7 +143,7 @@ func TestAccEFSFileSystemPolicy_equivalentPolicies(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19245
+// Reference: https://terraform-provider-awsgps/issues/19245
 func TestAccEFSFileSystemPolicy_equivalentPoliciesIAMPolicyDoc(t *testing.T) {
 	ctx := acctest.Context(t)
 	var desc efs.DescribeFileSystemPolicyOutput

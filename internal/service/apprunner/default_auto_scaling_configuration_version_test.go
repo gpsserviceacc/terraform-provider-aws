@@ -12,10 +12,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfapprunner "github.com/hashicorp/terraform-provider-aws/internal/service/apprunner"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfapprunner "terraform-provider-awsgps/internal/service/apprunner"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccAppRunnerDefaultAutoScalingConfigurationVersion_serial(t *testing.T) {

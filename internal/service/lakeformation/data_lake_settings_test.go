@@ -13,11 +13,11 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/lakeformation/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tflakeformation "github.com/hashicorp/terraform-provider-aws/internal/service/lakeformation"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	tflakeformation "terraform-provider-awsgps/internal/service/lakeformation"
+	"terraform-provider-awsgps/names"
 )
 
 func testAccDataLakeSettings_basic(t *testing.T) {

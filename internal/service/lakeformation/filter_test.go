@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/lakeformation"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/lakeformation/types"
-	tflakeformation "github.com/hashicorp/terraform-provider-aws/internal/service/lakeformation"
+	tflakeformation "terraform-provider-awsgps/internal/service/lakeformation"
 )
 
 func TestFilterPermissions(t *testing.T) {

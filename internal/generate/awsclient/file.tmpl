@@ -12,8 +12,8 @@ import (
 	{{ .GoV2Package }}_sdkv2 "github.com/aws/aws-sdk-go-v2/service/{{ .GoV2Package }}"
 	{{- end }}
 {{- end }}
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/names"
 )
 
 {{ range .Services }}

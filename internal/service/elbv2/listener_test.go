@@ -18,11 +18,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfelbv2 "github.com/hashicorp/terraform-provider-aws/internal/service/elbv2"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfelbv2 "terraform-provider-awsgps/internal/service/elbv2"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccELBV2Listener_Application_basic(t *testing.T) {
@@ -1524,7 +1524,7 @@ func TestAccELBV2Listener_DefaultAction_specifyOrder(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/6171
+// Reference: https://terraform-provider-awsgps/issues/6171
 func TestAccELBV2Listener_DefaultAction_actionDisappears(t *testing.T) {
 	ctx := acctest.Context(t)
 	var listener awstypes.Listener

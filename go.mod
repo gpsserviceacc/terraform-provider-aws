@@ -1,4 +1,4 @@
-module github.com/hashicorp/terraform-provider-aws
+module terraform-provider-awsgps
 
 go 1.21
 

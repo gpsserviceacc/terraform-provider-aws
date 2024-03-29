@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfelbv2 "github.com/hashicorp/terraform-provider-aws/internal/service/elbv2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfelbv2 "terraform-provider-awsgps/internal/service/elbv2"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccELBV2HostedZoneIDDataSource_basic(t *testing.T) {

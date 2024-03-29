@@ -8,9 +8,9 @@ import (
 
 	"github.com/YakDriver/regexache"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfkms "github.com/hashicorp/terraform-provider-aws/internal/service/kms"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfkms "terraform-provider-awsgps/internal/service/kms"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccKMSSecretDataSource_removed(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/rolesanywhere"
 	"github.com/aws/aws-sdk-go-v2/service/rolesanywhere/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func FindProfileByID(ctx context.Context, conn *rolesanywhere.Client, id string) (*types.ProfileDetail, error) {

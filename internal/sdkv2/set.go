@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
+	"terraform-provider-awsgps/internal/create"
 )
 
 // SimpleSchemaSetFunc returns a schema.SchemaSetFunc that hashes the given keys values.

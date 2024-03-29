@@ -11,9 +11,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/kms"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfkms "github.com/hashicorp/terraform-provider-aws/internal/service/kms"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfkms "terraform-provider-awsgps/internal/service/kms"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccKMSKeyPolicy_basic(t *testing.T) {
@@ -225,7 +225,7 @@ func TestAccKMSKeyPolicy_iamRoleUpdate(t *testing.T) {
 	})
 }
 
-// // Reference: https://github.com/hashicorp/terraform-provider-aws/issues/11801
+// // Reference: https://terraform-provider-awsgps/issues/11801
 func TestAccKMSKeyPolicy_iamRoleOrder(t *testing.T) {
 	ctx := acctest.Context(t)
 	var key kms.KeyMetadata
@@ -269,7 +269,7 @@ func TestAccKMSKeyPolicy_iamRoleOrder(t *testing.T) {
 	})
 }
 
-// // Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7646
+// // Reference: https://terraform-provider-awsgps/issues/7646
 func TestAccKMSKeyPolicy_iamServiceLinkedRole(t *testing.T) {
 	ctx := acctest.Context(t)
 	var key kms.KeyMetadata

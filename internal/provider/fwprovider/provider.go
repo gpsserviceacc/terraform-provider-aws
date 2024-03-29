@@ -17,11 +17,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	tffunction "github.com/hashicorp/terraform-provider-aws/internal/function"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
+	tffunction "terraform-provider-awsgps/internal/function"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/names"
 )
 
 var _ provider.Provider = &fwprovider{}

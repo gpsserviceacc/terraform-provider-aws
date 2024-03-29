@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	tfslices "terraform-provider-awsgps/internal/slices"
 )
 
 func AppendWarningf(diags diag.Diagnostics, format string, a ...any) diag.Diagnostics {

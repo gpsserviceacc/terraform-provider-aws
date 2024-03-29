@@ -14,12 +14,12 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	tfsesv2 "github.com/hashicorp/terraform-provider-aws/internal/service/sesv2"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/create"
+	tfsesv2 "terraform-provider-awsgps/internal/service/sesv2"
+	itypes "terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccSESV2EmailIdentity_basic_emailAddress(t *testing.T) {

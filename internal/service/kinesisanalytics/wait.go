@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/kinesisanalytics"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 const (
@@ -102,12 +102,12 @@ func waitIAMPropagation(ctx context.Context, f func() (interface{}, error)) (int
 
 		output, err = f()
 
-		// Kinesis Stream: https://github.com/hashicorp/terraform-provider-aws/issues/7032
+		// Kinesis Stream: https://terraform-provider-awsgps/issues/7032
 		if tfawserr.ErrMessageContains(err, kinesisanalytics.ErrCodeInvalidArgumentException, "Kinesis Analytics service doesn't have sufficient privileges") {
 			return retry.RetryableError(err)
 		}
 
-		// Kinesis Firehose: https://github.com/hashicorp/terraform-provider-aws/issues/7394
+		// Kinesis Firehose: https://terraform-provider-awsgps/issues/7394
 		if tfawserr.ErrMessageContains(err, kinesisanalytics.ErrCodeInvalidArgumentException, "Kinesis Analytics doesn't have sufficient privileges") {
 			return retry.RetryableError(err)
 		}
@@ -117,7 +117,7 @@ func waitIAMPropagation(ctx context.Context, f func() (interface{}, error)) (int
 			return retry.RetryableError(err)
 		}
 
-		// S3: https://github.com/hashicorp/terraform-provider-aws/issues/16104
+		// S3: https://terraform-provider-awsgps/issues/16104
 		if tfawserr.ErrMessageContains(err, kinesisanalytics.ErrCodeInvalidArgumentException, "Please check the role provided or validity of S3 location you provided") {
 			return retry.RetryableError(err)
 		}

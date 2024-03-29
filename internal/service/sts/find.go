@@ -7,7 +7,7 @@ import (
 	"context"
 
 	"github.com/aws/aws-sdk-go-v2/service/sts"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func FindCallerIdentity(ctx context.Context, conn *sts.Client) (*sts.GetCallerIdentityOutput, error) {

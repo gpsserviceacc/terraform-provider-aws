@@ -15,10 +15,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfssm "github.com/hashicorp/terraform-provider-aws/internal/service/ssm"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfssm "terraform-provider-awsgps/internal/service/ssm"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccSSMParameter_basic(t *testing.T) {
@@ -473,7 +473,7 @@ func TestAccSSMParameter_Overwrite_basic(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12213
+// Reference: https://terraform-provider-awsgps/issues/12213
 func TestAccSSMParameter_Overwrite_cascade(t *testing.T) {
 	ctx := acctest.Context(t)
 	name := fmt.Sprintf("%s_%s", t.Name(), sdkacctest.RandString(10))
@@ -499,7 +499,7 @@ func TestAccSSMParameter_Overwrite_cascade(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/18550
+// Reference: https://terraform-provider-awsgps/issues/18550
 func TestAccSSMParameter_Overwrite_tags(t *testing.T) {
 	ctx := acctest.Context(t)
 	var param ssm.Parameter
@@ -530,7 +530,7 @@ func TestAccSSMParameter_Overwrite_tags(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/18550
+// Reference: https://terraform-provider-awsgps/issues/18550
 func TestAccSSMParameter_Overwrite_noOverwriteTags(t *testing.T) {
 	ctx := acctest.Context(t)
 	var param ssm.Parameter
@@ -561,7 +561,7 @@ func TestAccSSMParameter_Overwrite_noOverwriteTags(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/18550
+// Reference: https://terraform-provider-awsgps/issues/18550
 func TestAccSSMParameter_Overwrite_updateToTags(t *testing.T) {
 	ctx := acctest.Context(t)
 	var param ssm.Parameter

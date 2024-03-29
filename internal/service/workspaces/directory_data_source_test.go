@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/workspaces"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"terraform-provider-awsgps/internal/acctest"
 )
 
 func testAccDirectoryDataSource_basic(t *testing.T) {

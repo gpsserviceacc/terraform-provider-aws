@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	tfssm "github.com/hashicorp/terraform-provider-aws/internal/service/ssm"
+	tfssm "terraform-provider-awsgps/internal/service/ssm"
 )
 
 func TestAssociationRuleMigrateState(t *testing.T) {

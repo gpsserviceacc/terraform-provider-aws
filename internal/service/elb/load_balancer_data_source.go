@@ -12,11 +12,11 @@ import (
 	"github.com/aws/aws-sdk-go/service/elb"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	tftags "terraform-provider-awsgps/internal/tags"
 )
 
 // @SDKDataSource("aws_elb")

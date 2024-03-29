@@ -7,9 +7,9 @@ import (
 
 	aws_sdkv2 "github.com/aws/aws-sdk-go-v2/aws"
 	oam_sdkv2 "github.com/aws/aws-sdk-go-v2/service/oam"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/names"
 )
 
 type servicePackage struct{}

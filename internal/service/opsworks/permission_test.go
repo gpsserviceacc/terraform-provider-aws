@@ -12,10 +12,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfopsworks "github.com/hashicorp/terraform-provider-aws/internal/service/opsworks"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfopsworks "terraform-provider-awsgps/internal/service/opsworks"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccOpsWorksPermission_basic(t *testing.T) {
@@ -70,7 +70,7 @@ func TestAccOpsWorksPermission_basic(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/4804
+// Reference: https://terraform-provider-awsgps/issues/4804
 func TestAccOpsWorksPermission_self(t *testing.T) {
 	ctx := acctest.Context(t)
 	var opsperm opsworks.Permission

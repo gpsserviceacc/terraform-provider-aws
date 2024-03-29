@@ -11,8 +11,8 @@ import (
 	"github.com/YakDriver/regexache"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/names"
 )
 
 const rfc1123RegexPattern = `^[A-Za-z]{3}, [0-9]+ [A-Za-z]+ [0-9]{4} [0-9:]+ [A-Z]+$`

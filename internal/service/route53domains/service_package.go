@@ -8,7 +8,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/route53domains"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/names"
 )
 
 // NewClient returns a new AWS SDK for Go v2 client for this service package's AWS API.

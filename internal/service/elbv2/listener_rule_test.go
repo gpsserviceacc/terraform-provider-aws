@@ -19,11 +19,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tfelbv2 "github.com/hashicorp/terraform-provider-aws/internal/service/elbv2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs"
+	tfelbv2 "terraform-provider-awsgps/internal/service/elbv2"
+	"terraform-provider-awsgps/names"
 )
 
 func TestLBListenerARNFromRuleARN(t *testing.T) {
@@ -1405,7 +1405,7 @@ func TestAccELBV2ListenerRule_Action_specifyOrder(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/6171
+// Reference: https://terraform-provider-awsgps/issues/6171
 func TestAccELBV2ListenerRule_Action_actionDisappears(t *testing.T) {
 	ctx := acctest.Context(t)
 	var rule awstypes.Rule

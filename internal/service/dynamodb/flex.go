@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/aws/aws-sdk-go/service/dynamodb"
-	"github.com/hashicorp/terraform-provider-aws/internal/maps"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"terraform-provider-awsgps/internal/maps"
+	"terraform-provider-awsgps/internal/slices"
 )
 
 func ExpandTableItemAttributes(input string) (map[string]*dynamodb.AttributeValue, error) {

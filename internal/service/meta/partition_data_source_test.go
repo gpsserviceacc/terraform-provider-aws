@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfmeta "github.com/hashicorp/terraform-provider-aws/internal/service/meta"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfmeta "terraform-provider-awsgps/internal/service/meta"
 )
 
 func TestAccMetaPartitionDataSource_basic(t *testing.T) {

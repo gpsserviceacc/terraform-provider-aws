@@ -15,12 +15,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/enum"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // @SDKResource("aws_s3_bucket_replication_configuration", name="Bucket Replication Configuration")
@@ -798,7 +798,7 @@ func expandReplicationRuleFilter(ctx context.Context, l []interface{}) types.Rep
 	// Specifying more than one of the listed parameters results in a MalformedXML error.
 	// If a filter is specified as filter { prefix = "" } in Terraform, we should send the prefix value
 	// in the API request even if it is an empty value, else Terraform will report non-empty plans.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23487
+	// Reference: https://terraform-provider-awsgps/issues/23487
 	if v, ok := tfMap["prefix"].(string); ok && result == nil {
 		result = &types.ReplicationRuleFilterMemberPrefix{
 			Value: v,

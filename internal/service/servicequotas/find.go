@@ -12,7 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/servicequotas"
 	"github.com/aws/aws-sdk-go-v2/service/servicequotas/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func findServiceQuotaDefaultByID(ctx context.Context, conn *servicequotas.Client, serviceCode, quotaCode string) (*types.ServiceQuota, error) {

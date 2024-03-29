@@ -5,9 +5,9 @@ package kinesis
 import (
 	"context"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/names"
 )
 
 type servicePackage struct{}

@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/iot"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
+	"terraform-provider-awsgps/internal/flex"
 )
 
 func expandThingTypeProperties(config map[string]interface{}) *iot.ThingTypeProperties {

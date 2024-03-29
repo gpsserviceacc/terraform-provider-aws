@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	tffirehose "github.com/hashicorp/terraform-provider-aws/internal/service/firehose"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	tffirehose "terraform-provider-awsgps/internal/service/firehose"
 )
 
 func TestMigrateState(t *testing.T) {

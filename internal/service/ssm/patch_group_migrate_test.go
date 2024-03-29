@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfssm "github.com/hashicorp/terraform-provider-aws/internal/service/ssm"
+	"terraform-provider-awsgps/internal/acctest"
+	tfssm "terraform-provider-awsgps/internal/service/ssm"
 )
 
 func testResourcePatchGroupStateDataV0() map[string]interface{} {

@@ -32,7 +32,7 @@ const (
 	errCodeNoSuchWebsiteConfiguration           = "NoSuchWebsiteConfiguration"
 	errCodeNotImplemented                       = "NotImplemented"
 	// errCodeObjectLockConfigurationNotFound should be used with tfawserr.ErrCodeContains, not tfawserr.ErrCodeEquals.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/pull/26317.
+	// Reference: https://terraform-provider-awsgps/pull/26317.
 	errCodeObjectLockConfigurationNotFound           = "ObjectLockConfigurationNotFound"
 	errCodeObjectLockConfigurationNotFoundError      = "ObjectLockConfigurationNotFoundError"
 	errCodeOperationAborted                          = "OperationAborted"
@@ -41,7 +41,7 @@ const (
 	errCodeServerSideEncryptionConfigurationNotFound = "ServerSideEncryptionConfigurationNotFoundError"
 	errCodeUnsupportedArgument                       = "UnsupportedArgument"
 	// errCodeXNotImplemented is returned from third-party S3 API implementations.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/14645.
+	// Reference: https://terraform-provider-awsgps/issues/14645.
 	errCodeXNotImplemented = "XNotImplemented"
 )
 

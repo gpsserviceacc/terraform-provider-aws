@@ -6,7 +6,7 @@ package resourceexplorer2_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"terraform-provider-awsgps/internal/acctest"
 )
 
 func TestAccResourceExplorer2_serial(t *testing.T) {

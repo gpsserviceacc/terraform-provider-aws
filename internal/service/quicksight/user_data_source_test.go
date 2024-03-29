@@ -10,9 +10,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/quicksight"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfquicksight "github.com/hashicorp/terraform-provider-aws/internal/service/quicksight"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfquicksight "terraform-provider-awsgps/internal/service/quicksight"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccQuickSightUserDataSource_basic(t *testing.T) {

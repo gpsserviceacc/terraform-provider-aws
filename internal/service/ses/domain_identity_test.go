@@ -15,9 +15,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/ses"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccSESDomainIdentity_basic(t *testing.T) {
@@ -64,7 +64,7 @@ func TestAccSESDomainIdentity_disappears(t *testing.T) {
 }
 
 // TestAccSESDomainIdentity_trailingPeriod updated in 3.0 to account for domain plan-time validation
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13510
+// Reference: https://terraform-provider-awsgps/issues/13510
 func TestAccSESDomainIdentity_trailingPeriod(t *testing.T) {
 	ctx := acctest.Context(t)
 	domain := acctest.RandomFQDomainName()

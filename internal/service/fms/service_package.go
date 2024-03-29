@@ -30,7 +30,7 @@ func (p *servicePackage) CustomizeConn(ctx context.Context, conn *fms_sdkv1.FMS)
 			}
 		// System problems can arise during FMS policy updates (maybe also creation),
 		// so we set the following operation as retryable.
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23946
+		// Reference: https://terraform-provider-awsgps/issues/23946
 		case "PutPolicy":
 			if tfawserr.ErrCodeEquals(r.Error, fms_sdkv1.ErrCodeInternalErrorException) {
 				r.Retryable = aws_sdkv1.Bool(true)

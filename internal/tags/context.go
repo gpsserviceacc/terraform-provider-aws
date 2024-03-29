@@ -6,7 +6,7 @@ package tags
 import (
 	"context"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
+	"terraform-provider-awsgps/internal/types/option"
 )
 
 // InContext represents the tagging information kept in Context.

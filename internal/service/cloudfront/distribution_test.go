@@ -18,11 +18,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfcloudfront "github.com/hashicorp/terraform-provider-aws/internal/service/cloudfront"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfcloudfront "terraform-provider-awsgps/internal/service/cloudfront"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccCloudFrontDistribution_basic(t *testing.T) {
@@ -315,7 +315,7 @@ func TestAccCloudFrontDistribution_multiOrigin(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/188
+// https://terraform-provider-awsgps/issues/188
 // TestAccCloudFrontDistribution_orderedCacheBehavior runs an
 // aws_cloudfront_distribution acceptance test with multiple and ordered cache behaviors.
 //
@@ -1293,7 +1293,7 @@ func TestAccCloudFrontDistribution_ViewerCertificate_acmCertificateARN(t *testin
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7773
+// Reference: https://terraform-provider-awsgps/issues/7773
 func TestAccCloudFrontDistribution_ViewerCertificateACMCertificateARN_conflictsWithCloudFrontDefaultCertificate(t *testing.T) {
 	ctx := acctest.Context(t)
 	var distribution cloudfront.Distribution

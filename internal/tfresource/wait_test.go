@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func TestWaitUntil(t *testing.T) { //nolint:tparallel

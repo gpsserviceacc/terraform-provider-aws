@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-framework-validators/helpers/validatordiag"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // ipv4CIDRNetworkAddressValidator validates that a string Attribute's value is a valid IPv4 CIDR that represents a network address.

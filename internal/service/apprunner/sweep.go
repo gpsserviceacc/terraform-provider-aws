@@ -10,8 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/apprunner"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv2"
+	"terraform-provider-awsgps/internal/sweep"
+	"terraform-provider-awsgps/internal/sweep/awsv2"
 )
 
 func RegisterSweepers() {
@@ -64,7 +64,7 @@ func sweepAutoScalingConfigurationVersions(region string) error {
 			arn := aws.ToString(v.AutoScalingConfigurationArn)
 
 			// Skip DefaultConfigurations as deletion not supported by the AppRunner service
-			// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19840
+			// Reference: https://terraform-provider-awsgps/issues/19840
 			if aws.ToBool(v.IsDefault) {
 				log.Printf("[INFO] Skipping App Runner Default AutoScaling Configuration: %s", arn)
 				continue

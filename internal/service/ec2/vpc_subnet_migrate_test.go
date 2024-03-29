@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
 )
 
 func TestSubnetMigrateState(t *testing.T) {

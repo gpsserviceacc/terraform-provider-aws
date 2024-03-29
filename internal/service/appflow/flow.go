@@ -17,16 +17,16 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/enum"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	itypes "terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 // @SDKResource("aws_appflow_flow", name="Flow")
@@ -1599,7 +1599,7 @@ func expandDestinationFlowConfig(tfMap map[string]interface{}) *types.Destinatio
 	if v, ok := tfMap["connector_type"].(string); ok && v != "" {
 		a.ConnectorType = types.ConnectorType(v)
 	} else {
-		// https://github.com/hashicorp/terraform-provider-aws/issues/26491.
+		// https://terraform-provider-awsgps/issues/26491.
 		return nil
 	}
 
@@ -2466,7 +2466,7 @@ func expandTask(tfMap map[string]interface{}) *types.Task {
 	if v, ok := tfMap["task_type"].(string); ok && v != "" {
 		a.TaskType = types.TaskType(v)
 	} else {
-		// https://github.com/hashicorp/terraform-provider-aws/issues/28237.
+		// https://terraform-provider-awsgps/issues/28237.
 		return nil
 	}
 

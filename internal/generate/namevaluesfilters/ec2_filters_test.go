@@ -6,8 +6,8 @@ package namevaluesfilters_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/namevaluesfilters"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/generate/namevaluesfilters"
 )
 
 func TestNameValuesFiltersEC2Tags(t *testing.T) {

@@ -15,9 +15,9 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
+	"terraform-provider-awsgps/names"
 )
 
 func TestSecurityGroupRuleCreateID(t *testing.T) {
@@ -680,7 +680,7 @@ func TestAccVPCSecurityGroupRule_prefixListEgress(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/26191.
+// https://terraform-provider-awsgps/issues/26191.
 func TestAccVPCSecurityGroupRule_prefixListEmptyString(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)
@@ -1019,7 +1019,7 @@ func TestAccVPCSecurityGroupRule_DescriptionAllPorts_nonZeroPorts(t *testing.T) 
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/6416
+// Reference: https://terraform-provider-awsgps/issues/6416
 func TestAccVPCSecurityGroupRule_MultipleRuleSearching_allProtocolCrash(t *testing.T) {
 	ctx := acctest.Context(t)
 	var group ec2.SecurityGroup

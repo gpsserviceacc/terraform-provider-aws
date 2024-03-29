@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/wafv2"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv1"
+	"terraform-provider-awsgps/internal/sweep"
+	"terraform-provider-awsgps/internal/sweep/awsv1"
 )
 
 func RegisterSweepers() {
@@ -216,7 +216,7 @@ func sweepWebACLs(region string) error {
 			name := aws.StringValue(v.Name)
 
 			// Exclude WebACLs managed by Firewall Manager as deletion returns AccessDeniedException.
-			// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19149
+			// Reference: https://terraform-provider-awsgps/issues/19149
 			// Prefix Reference: https://docs.aws.amazon.com/waf/latest/developerguide/get-started-fms-create-security-policy.html
 			if strings.HasPrefix(name, "FMManagedWebACLV2") {
 				log.Printf("[WARN] Skipping WAFv2 Web ACL: %s", name)

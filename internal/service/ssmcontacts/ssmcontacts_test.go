@@ -6,7 +6,7 @@ package ssmcontacts_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"terraform-provider-awsgps/internal/acctest"
 )
 
 // SSMContacts resources depend on a replication set existing and

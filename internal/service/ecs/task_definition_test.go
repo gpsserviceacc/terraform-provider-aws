@@ -15,10 +15,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfecs "github.com/hashicorp/terraform-provider-aws/internal/service/ecs"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfecs "terraform-provider-awsgps/internal/service/ecs"
+	"terraform-provider-awsgps/names"
 )
 
 func init() {
@@ -838,7 +838,7 @@ func TestAccECSTaskDefinition_changeVolumesForcesNewResource(t *testing.T) {
 	})
 }
 
-// Regression for https://github.com/hashicorp/terraform-provider-aws/issues/2336
+// Regression for https://terraform-provider-awsgps/issues/2336
 func TestAccECSTaskDefinition_arrays(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def ecs.TaskDefinition

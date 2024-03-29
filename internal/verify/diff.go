@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	"terraform-provider-awsgps/internal/conns"
+	tftags "terraform-provider-awsgps/internal/tags"
 )
 
 // Find JSON diff functions in the json.go file.
@@ -33,8 +33,8 @@ func SetTagsDiff(ctx context.Context, diff *schema.ResourceDiff, meta interface{
 	// when the merger of resource-level tags onto provider-level tags results in n > 0 tags,
 	// otherwise we mark the attribute as "Computed" only when there is a known diff (excluding an empty map)
 	// or a change for "tags_all".
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/18366
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/19005
+	// Reference: https://terraform-provider-awsgps/issues/18366
+	// Reference: https://terraform-provider-awsgps/issues/19005
 
 	if !diff.GetRawPlan().GetAttr("tags").IsWhollyKnown() {
 		if err := diff.SetNewComputed("tags_all"); err != nil {

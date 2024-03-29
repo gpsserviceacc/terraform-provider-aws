@@ -12,9 +12,9 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfecs "github.com/hashicorp/terraform-provider-aws/internal/service/ecs"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfecs "terraform-provider-awsgps/internal/service/ecs"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccECSClusterCapacityProviders_basic(t *testing.T) {
@@ -110,7 +110,7 @@ func TestAccECSClusterCapacityProviders_defaults(t *testing.T) {
 func TestAccECSClusterCapacityProviders_destroy(t *testing.T) {
 	ctx := acctest.Context(t)
 
-	// This test proves that https://github.com/hashicorp/terraform-provider-aws/issues/11409
+	// This test proves that https://terraform-provider-awsgps/issues/11409
 	// has been addressed by aws_ecs_cluster_capacity_providers.
 	//
 	// If we were configuring capacity providers directly on the cluster, the

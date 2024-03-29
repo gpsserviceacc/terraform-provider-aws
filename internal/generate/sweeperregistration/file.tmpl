@@ -4,7 +4,7 @@ package {{ .PackageName }}
 
 import (
 {{ range .Services }}
-	"github.com/hashicorp/terraform-provider-aws/internal/service/{{ .ProviderPackage }}"
+	"terraform-provider-awsgps/internal/service/{{ .ProviderPackage }}"
 {{- end }}
 )
 

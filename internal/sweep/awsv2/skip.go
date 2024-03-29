@@ -7,7 +7,7 @@ import (
 	"net"
 
 	"github.com/hashicorp/aws-sdk-go-base/v2/tfawserr"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"terraform-provider-awsgps/internal/errs"
 )
 
 // Check sweeper API call error for reasons to skip sweeping

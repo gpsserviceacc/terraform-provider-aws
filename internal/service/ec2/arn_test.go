@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/YakDriver/regexache"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
+	tfec2 "terraform-provider-awsgps/internal/service/ec2"
 )
 
 func TestInstanceProfileARNToName(t *testing.T) {

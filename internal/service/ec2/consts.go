@@ -5,7 +5,7 @@ package ec2
 
 import (
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"terraform-provider-awsgps/internal/slices"
 )
 
 const (
@@ -224,7 +224,7 @@ func vpnTunnelOptionsStartupAction_Values() []string {
 
 const (
 	vpnConnectionTypeIPsec1        = "ipsec.1"
-	vpnConnectionTypeIPsec1_AES256 = "ipsec.1-aes256" // https://github.com/hashicorp/terraform-provider-aws/issues/23105.
+	vpnConnectionTypeIPsec1_AES256 = "ipsec.1-aes256" // https://terraform-provider-awsgps/issues/23105.
 )
 
 func vpnConnectionType_Values() []string {

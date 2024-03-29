@@ -16,7 +16,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
+	fwtypes "terraform-provider-awsgps/internal/framework/types"
 )
 
 // Flatten = AWS --> TF

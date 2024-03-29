@@ -11,9 +11,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/awsutil"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfrouter53 "github.com/hashicorp/terraform-provider-aws/internal/service/route53"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	tfrouter53 "terraform-provider-awsgps/internal/service/route53"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccRoute53TrafficPolicyDocumentDataSource_basic(t *testing.T) {

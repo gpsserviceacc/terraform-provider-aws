@@ -6,7 +6,7 @@ package s3
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/names"
 )
 
 // See https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints.

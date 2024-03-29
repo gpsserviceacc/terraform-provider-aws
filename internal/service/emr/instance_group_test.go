@@ -13,10 +13,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfemr "github.com/hashicorp/terraform-provider-aws/internal/service/emr"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfemr "terraform-provider-awsgps/internal/service/emr"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccEMRInstanceGroup_basic(t *testing.T) {
@@ -76,7 +76,7 @@ func TestAccEMRInstanceGroup_disappears(t *testing.T) {
 	})
 }
 
-// Regression test for https://github.com/hashicorp/terraform-provider-aws/issues/1355
+// Regression test for https://terraform-provider-awsgps/issues/1355
 func TestAccEMRInstanceGroup_Disappears_emrCluster(t *testing.T) {
 	ctx := acctest.Context(t)
 	var cluster emr.Cluster
@@ -246,7 +246,7 @@ func TestAccEMRInstanceGroup_autoScalingPolicy(t *testing.T) {
 }
 
 // Confirm we can scale down the instance count.
-// Regression test for https://github.com/hashicorp/terraform-provider-aws/issues/1264
+// Regression test for https://terraform-provider-awsgps/issues/1264
 func TestAccEMRInstanceGroup_instanceCount(t *testing.T) {
 	ctx := acctest.Context(t)
 	var v emr.InstanceGroup

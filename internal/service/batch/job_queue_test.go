@@ -16,10 +16,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfbatch "github.com/hashicorp/terraform-provider-aws/internal/service/batch"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfbatch "terraform-provider-awsgps/internal/service/batch"
+	"terraform-provider-awsgps/names"
 )
 
 // ComputeEnvironments has been deprecated. The Import step of tests that use ComputeEnvironments
@@ -269,7 +269,7 @@ func TestAccBatchJobQueue_ComputeEnvironmentOrder_multiple(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/8083
+// Reference: https://terraform-provider-awsgps/issues/8083
 func TestAccBatchJobQueue_ComputeEnvironments_externalOrderUpdate(t *testing.T) {
 	ctx := acctest.Context(t)
 	var jobQueue1 batch.JobQueueDetail

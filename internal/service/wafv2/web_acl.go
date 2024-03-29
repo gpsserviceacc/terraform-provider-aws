@@ -18,12 +18,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/flex"
+	tftags "terraform-provider-awsgps/internal/tags"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
+	"terraform-provider-awsgps/names"
 )
 
 const (
@@ -437,7 +437,7 @@ func FindWebACLByThreePartKey(ctx context.Context, conn *wafv2.WAFV2, id, name, 
 // filterWebACLRules removes the AWS-added Shield Advanced auto mitigation rule here
 // so that the provider will not report diff and/or attempt to remove the rule as it is
 // owned and managed by AWS.
-// See https://github.com/hashicorp/terraform-provider-aws/issues/22869
+// See https://terraform-provider-awsgps/issues/22869
 // See https://docs.aws.amazon.com/waf/latest/developerguide/ddos-automatic-app-layer-response-rg.html
 func filterWebACLRules(rules, configRules []*wafv2.Rule) []*wafv2.Rule {
 	var fr []*wafv2.Rule

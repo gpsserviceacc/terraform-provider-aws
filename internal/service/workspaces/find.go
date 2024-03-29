@@ -31,7 +31,7 @@ func FindDirectoryByID(ctx context.Context, conn *workspaces.Client, id string) 
 	}
 
 	// TODO Check for multiple results.
-	// TODO https://github.com/hashicorp/terraform-provider-aws/pull/17613.
+	// TODO https://terraform-provider-awsgps/pull/17613.
 
 	directory := output.Directories[0]
 

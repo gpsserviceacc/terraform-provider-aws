@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfrds "github.com/hashicorp/terraform-provider-aws/internal/service/rds"
+	"terraform-provider-awsgps/internal/acctest"
+	tfrds "terraform-provider-awsgps/internal/service/rds"
 )
 
 func TestInstanceStateUpgradeV0(t *testing.T) {

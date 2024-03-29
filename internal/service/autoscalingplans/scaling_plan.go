@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/flex"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // @SDKResource("aws_autoscalingplans_scaling_plan")
@@ -551,7 +551,7 @@ func expandScalingInstructions(vScalingInstructions *schema.Set) []*autoscalingp
 		if v, ok := mScalingInstruction["service_namespace"].(string); ok && v != "" {
 			scalingInstruction.ServiceNamespace = aws.String(v)
 		} else {
-			// https://github.com/hashicorp/terraform-provider-aws/issues/17929
+			// https://terraform-provider-awsgps/issues/17929
 			// https://github.com/hashicorp/terraform-plugin-sdk/issues/588
 			continue
 		}

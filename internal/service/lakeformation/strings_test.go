@@ -6,7 +6,7 @@ package lakeformation_test
 import (
 	"testing"
 
-	tflakeformation "github.com/hashicorp/terraform-provider-aws/internal/service/lakeformation"
+	tflakeformation "terraform-provider-awsgps/internal/service/lakeformation"
 )
 
 func TestStringSlicesEqualIgnoreOrder(t *testing.T) {

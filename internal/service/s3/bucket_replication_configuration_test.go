@@ -14,11 +14,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfs3 "github.com/hashicorp/terraform-provider-aws/internal/service/s3"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfs3 "terraform-provider-awsgps/internal/service/s3"
+	"terraform-provider-awsgps/internal/tfresource"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccS3BucketReplicationConfiguration_basic(t *testing.T) {
@@ -378,7 +378,7 @@ func TestAccS3BucketReplicationConfiguration_configurationRuleDestinationAccessC
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/12480
+// Reference: https://terraform-provider-awsgps/issues/12480
 func TestAccS3BucketReplicationConfiguration_configurationRuleDestinationAddAccessControlTranslation(t *testing.T) {
 	ctx := acctest.Context(t)
 	rName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)
@@ -554,7 +554,7 @@ func TestAccS3BucketReplicationConfiguration_replicaModifications(t *testing.T) 
 
 // TestAccS3BucketReplicationConfiguration_withoutId ensures a configuration with a Computed
 // rule.id does not result in a non-empty plan
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23690
+// Reference: https://terraform-provider-awsgps/issues/23690
 func TestAccS3BucketReplicationConfiguration_withoutId(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket_replication_configuration.test"
@@ -726,7 +726,7 @@ func TestAccS3BucketReplicationConfiguration_schemaV2SameRegion(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/21895
+// Reference: https://terraform-provider-awsgps/issues/21895
 func TestAccS3BucketReplicationConfiguration_schemaV2DestinationMetrics(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket_replication_configuration.test"
@@ -813,7 +813,7 @@ func TestAccS3BucketReplicationConfiguration_existingObjectReplication(t *testin
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23487
+// Reference: https://terraform-provider-awsgps/issues/23487
 func TestAccS3BucketReplicationConfiguration_filter_emptyConfigurationBlock(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket_replication_configuration.test"
@@ -856,7 +856,7 @@ func TestAccS3BucketReplicationConfiguration_filter_emptyConfigurationBlock(t *t
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23487
+// Reference: https://terraform-provider-awsgps/issues/23487
 func TestAccS3BucketReplicationConfiguration_filter_emptyPrefix(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket_replication_configuration.test"
@@ -1024,7 +1024,7 @@ func TestAccS3BucketReplicationConfiguration_filter_andOperator(t *testing.T) {
 
 // TestAccS3BucketReplicationConfiguration_filter_withoutId ensures a configuration with a Computed
 // rule.id does not result in a non-empty plan.
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23690
+// Reference: https://terraform-provider-awsgps/issues/23690
 func TestAccS3BucketReplicationConfiguration_filter_withoutId(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket_replication_configuration.test"
@@ -1064,7 +1064,7 @@ func TestAccS3BucketReplicationConfiguration_filter_withoutId(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/21961
+// Reference: https://terraform-provider-awsgps/issues/21961
 func TestAccS3BucketReplicationConfiguration_withoutPrefix(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_s3_bucket_replication_configuration.test"

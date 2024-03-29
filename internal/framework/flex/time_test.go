@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
+	"terraform-provider-awsgps/internal/framework/flex"
 )
 
 func TestTimeFromFramework(t *testing.T) {

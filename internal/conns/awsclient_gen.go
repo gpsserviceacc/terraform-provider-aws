@@ -248,8 +248,8 @@ import (
 	wafregional_sdkv1 "github.com/aws/aws-sdk-go/service/wafregional"
 	wafv2_sdkv1 "github.com/aws/aws-sdk-go/service/wafv2"
 	worklink_sdkv1 "github.com/aws/aws-sdk-go/service/worklink"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/names"
 )
 
 func (c *AWSClient) ACMClient(ctx context.Context) *acm_sdkv2.Client {

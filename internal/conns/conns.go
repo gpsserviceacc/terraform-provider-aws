@@ -11,8 +11,8 @@ import (
 	session_sdkv1 "github.com/aws/aws-sdk-go/aws/session"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	awsbasev1 "github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/version"
+	"terraform-provider-awsgps/internal/types"
+	"terraform-provider-awsgps/version"
 )
 
 // ServicePackage is the minimal interface exported from each AWS service package.

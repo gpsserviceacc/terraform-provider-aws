@@ -10,8 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/evidently"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/evidently/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"terraform-provider-awsgps/internal/errs"
+	"terraform-provider-awsgps/internal/tfresource"
 )
 
 func FindFeatureWithProjectNameorARN(ctx context.Context, conn *evidently.Client, featureName, projectNameOrARN string) (*awstypes.Feature, error) {

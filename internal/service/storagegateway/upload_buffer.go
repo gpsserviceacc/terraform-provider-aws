@@ -14,9 +14,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/storagegateway"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"terraform-provider-awsgps/internal/conns"
+	"terraform-provider-awsgps/internal/errs/sdkdiag"
+	"terraform-provider-awsgps/internal/verify"
 )
 
 // @SDKResource("aws_storagegateway_upload_buffer")
@@ -64,7 +64,7 @@ func resourceUploadBufferCreate(ctx context.Context, d *schema.ResourceData, met
 		input.DiskIds = aws.StringSlice([]string{v.(string)})
 	}
 
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/17809
+	// Reference: https://terraform-provider-awsgps/issues/17809
 	if v, ok := d.GetOk("disk_path"); ok {
 		input.DiskIds = aws.StringSlice([]string{v.(string)})
 	}

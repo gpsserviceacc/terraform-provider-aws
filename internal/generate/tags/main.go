@@ -14,10 +14,10 @@ import (
 	"time"
 
 	"github.com/YakDriver/regexache"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	v1 "github.com/hashicorp/terraform-provider-aws/internal/generate/tags/templates/v1"
-	v2 "github.com/hashicorp/terraform-provider-aws/internal/generate/tags/templates/v2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/generate/common"
+	v1 "terraform-provider-awsgps/internal/generate/tags/templates/v1"
+	v2 "terraform-provider-awsgps/internal/generate/tags/templates/v2"
+	"terraform-provider-awsgps/names"
 )
 
 const (

@@ -15,10 +15,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfdlm "github.com/hashicorp/terraform-provider-aws/internal/service/dlm"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"terraform-provider-awsgps/internal/acctest"
+	"terraform-provider-awsgps/internal/conns"
+	tfdlm "terraform-provider-awsgps/internal/service/dlm"
+	"terraform-provider-awsgps/names"
 )
 
 func TestAccDLMLifecyclePolicy_basic(t *testing.T) {
